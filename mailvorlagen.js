@@ -1,4 +1,4 @@
-document.getElementById('grundgerüst').addEventListener('click', function () {
+document.getElementById('grundgeruest').addEventListener('click', function () {
 	const mailVorlage = `Guten Tag,
 
 vielen Dank für Ihre Nachricht.
@@ -57,7 +57,7 @@ vielen Dank für Ihre Nachricht!
 
 Um Ihr Guthaben auszahlen zu können, benötigen wir von Ihnen einen gültigen Lichtbildausweis. Dies dient lediglich der Legitimation und Ihre Daten werden selbstverständlich nicht gespeichert (DSGVO).
 
-Bitte senden Sie uns Ihren Lichtbildausweis per E-Mail an info@wienenergie.at oder bringen Sie ihn persönlich in unseren Service Treff in der Spittelau vorbei.
+Bitte schicken Sie uns Ihren Lichtbildausweis oder bringen Sie ihn persönlich in unseren Service Treff in der Spittelau vorbei.
 
 Sollten Sie in der Zwischenzeit Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.
 
@@ -91,7 +91,7 @@ Um Ihre Anfrage weiter bearbeiten zu können, benötigen wir bitte noch Ihre Kun
 
 Ihre Kundennummer beginnt mit 12, Ihre Vertragskontonummer hingegen mit 22.
 
-Bitte teilen Sie uns Ihre Kundennummer oder Vertragskontonummer einfach mit, damit wir Ihnen weiterhelfen können.`;
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -312,6 +312,74 @@ Zusätzliche Hinweise:
 Sie können einen Rückruf für allgemeine Anfragen und Anfragen rund um Smart Meter buchen.
 Es gibt separate Telefonnummern für Beschwerden und Baustellenauskunft.
 Weitere Informationen und Online-Services finden Sie auf der Website der Wiener Netze: https://www.wienernetze.at/`;
+
+	document.getElementById('outputArea').value = mailVorlage;
+});
+
+// #####################################################################################################################
+
+document.getElementById('waerme_anm').addEventListener('click', function () {
+	const mailVorlage = `Sehr geehrter _kd_,
+	
+vielen Dank für Ihre Nachricht.
+
+Um Ihr Anliegen bearbeitn zu können benötigen wir:
+- Kopie Kaufvertrag oder
+- Mietvertrag
+
+Bitte senden Sie uns für die Anmeldung der Wärmelieferung im Zuge des Mieter- oder Eigentümerwechsels folgende Unterlagen zu:
+
+Bei Mietwohnungen:
+- Eine Bestätigung über den Beginn des Mietvertrages (unterschrieben) aus der das Datum des Mietvertragsende, die Verbrauchsstellenadresse sowie der vollständige Name des Vermieters und Mieters ersichtlich sind.
+
+Bei Eigentumswohnungen:
+- Eine Kopie des Kaufvertrages (unterschrieben) aus dem das Übergabedatum, die Verbrauchsstellenadresse sowie die vollständigen Namen des Verkäufers und Käufers ersichtlich sind.
+
+Wir ersuchen Sie, diese Unterlagen elektronisch (als PDF-Dokument) zu senden.
+
+Für weiter fragen zum Thema Fernwärme wenden Sie sich bitte an folgende Mail-Adresse: waerme@wienenergie.at.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
+
+	document.getElementById('outputArea').value = mailVorlage;
+});
+
+// #####################################################################################################################
+
+document.getElementById('grundgerüst').addEventListener('click', function () {
+	const mailVorlage = ``;
+
+	document.getElementById('outputArea').value = mailVorlage;
+});
+
+// #####################################################################################################################
+
+document.getElementById('grundgerüst').addEventListener('click', function () {
+	const mailVorlage = ``;
+
+	document.getElementById('outputArea').value = mailVorlage;
+});
+
+// #####################################################################################################################
+
+document.getElementById('grundgerüst').addEventListener('click', function () {
+	const mailVorlage = ``;
+
+	document.getElementById('outputArea').value = mailVorlage;
+});
+
+// #####################################################################################################################
+
+document.getElementById('grundgerüst').addEventListener('click', function () {
+	const mailVorlage = ``;
+
+	document.getElementById('outputArea').value = mailVorlage;
+});
+
+// #####################################################################################################################
+
+document.getElementById('grundgerüst').addEventListener('click', function () {
+	const mailVorlage = ``;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });

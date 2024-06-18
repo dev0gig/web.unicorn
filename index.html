@@ -35,6 +35,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
+
+  .demo-card-wide{
+    display: flex;
+    flex-grow: 1;
+  }
 </style>
 
 <body>
@@ -71,9 +76,9 @@
       <!-- Tabs -->
       <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
         <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Copilot</a>
-        <a href="#scroll-tab-2" class="mdl-layout__tab">Mail</a>
-        <a href="#scroll-tab-3" class="mdl-layout__tab">Math</a>
-        <a href="#scroll-tab-4" class="mdl-layout__tab">Time</a>
+        <a href="#scroll-tab-2" class="mdl-layout__tab">Mail-Templates</a>
+        <a href="#scroll-tab-3" class="mdl-layout__tab">FET-Calculator</a>
+        <a href="#scroll-tab-4" class="mdl-layout__tab">Time-Tracking</a>
       </div>
     </header>
     <div class="mdl-layout__drawer">
@@ -102,7 +107,16 @@
       </nav>
     </div>
     <main class="mdl-layout__content">
-      <!-------------------------------------------------SECTION 1 COPILOT ------------------------------------------------------>
+
+      <!----------------------------------------------------
+      -██████╗-██████╗-██████╗-██╗██╗------██████╗-████████╗
+      ██╔════╝██╔═══██╗██╔══██╗██║██║-----██╔═══██╗╚══██╔══╝
+      ██║-----██║---██║██████╔╝██║██║-----██║---██║---██║---
+      ██║-----██║---██║██╔═══╝-██║██║-----██║---██║---██║---
+      ╚██████╗╚██████╔╝██║-----██║███████╗╚██████╔╝---██║---
+      -╚═════╝-╚═════╝-╚═╝-----╚═╝╚══════╝-╚═════╝----╚═╝---
+      ----------------------------------------------------->
+
       <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
         <div class="page-content">
 
@@ -244,7 +258,6 @@
               <h2 class="mdl-card__title-text">SuperSchnell</h2>
             </div>
             <div class="mdl-card__supporting-text">
-              Diese Schulung muss noch absolviert werden!
               <div class="group-buttons">
 
               </div>
@@ -257,7 +270,6 @@
               <h2 class="mdl-card__title-text">Fernwärme</h2>
             </div>
             <div class="mdl-card__supporting-text">
-              Diese Schulung muss noch absolviert werden!
               <div class="group-buttons">
                 <button class="mdl-button mdl-js-button mdl-button--raised"
                   onclick="window.open('http://spam01/PAM4/frame/workplaceframe.aspx?')">
@@ -277,7 +289,6 @@
               <h2 class="mdl-card__title-text">Wiener Netze</h2>
             </div>
             <div class="mdl-card__supporting-text">
-              Diese Schulung muss noch absolviert werden!
               <div class="group-buttons">
                 <button class="mdl-button mdl-js-button mdl-button--raised"
                   onclick="window.open('https://www.wienernetze.at/stromversorgung')">
@@ -324,49 +335,120 @@
 
         </div>
       </section>
-      <!-------------------------------------------------SECTION 1 END----------------------------------------------------------->
 
-      <!-------------------------------------------------SECTION 2 MAIL---------------------------------------------------------->
+      <!----------------------------
+      ███╗---███╗-█████╗-██╗██╗-----
+      ████╗-████║██╔══██╗██║██║-----
+      ██╔████╔██║███████║██║██║-----
+      ██║╚██╔╝██║██╔══██║██║██║-----
+      ██║-╚═╝-██║██║--██║██║███████╗
+      ╚═╝-----╚═╝╚═╝--╚═╝╚═╝╚══════╝
+      ----------------------------->
+
       <section class="mdl-layout__tab-panel" id="scroll-tab-2">
 
         <div class="page-content">
-          <div>
-            <h2>Mail-Templates</h2>
-            <h6>Grundgerüst</h6>
-            <div class="group-buttons">
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="grundgerüst">Grundgerüst</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="tois_vorlage">Tois-Vorlage</button>
+          <style>
+            .mail_grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              width: 100%;
+              gap: 20px;
+            }
+
+            .mail_button_flex {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 20px;
+            }
+          </style>
+          <div class="mail_grid">
+            <!-- Grundaufbau -->
+            <div class="mail_button_flex">
+              <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Grundgerüst</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <div class="group-buttons">
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="grundgeruest">Grundgerüst</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="tois_vorlage">Tois-Vorlage</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Strom & Gas -->
+              <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Strom & Gas</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <div class="group-buttons">
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="abmeldung">Abmeldung</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszahlung_ausweis_fehlt">GH, ID fehlt</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszahlung">GH
+                      Auszahlung</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="kdnr_benötigt">Kundennummer
+                      benötigt</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="rp">Ratenplan</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised"
+                      id="rechnungskorrektur_zählerstände">Rechnungskorrektur & Zählerstände</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="sonnenstrom">Sonnenstrom</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised"
+                      id="verlassenschaft">Verlassenschaft</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="tw">Tarifwechsel</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised"
+                      id="trockenlegungsbrief">Trockenlegungsbrief</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="ummeldung_erfolgreich">Ummeldung
+                      erfolgreich</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Wärme -->
+              <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Wärme</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <div class="group-buttons">
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="waerme_anm">Anmeldung</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Kontaktdaten -->
+              <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Kontaktdaten</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <div class="group-buttons">
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="data_spit">Kontaktdaten
+                      Spittelau</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="data_wn">Kontaktdaten
+                      WienerNetze</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised"
+                      id="data_KS_allgemein">contact_data_KS</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h6>Guthaben</h6>
-            <div class="group-buttons">
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="abmeldung">Abmeldung</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszahlung_ausweis_fehlt">GH Auszahlung, Ausweiskopie fehlt</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszahlung">GH Auszahlung</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="kdnr_benötigt">Kundennummer benötigt</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="rp">Ratenplan</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="rechnungskorrektur_zählerstände">Rechnungskorrektur & Zählerstände</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="sonnenstrom">Sonnenstrom</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="verlassenschaft">Verlassenschaft</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="tw">Tarifwechsel</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="trockenlegungsbrief">Trockenlegungsbrief</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="ummeldung_erfolgreich">Ummeldung erfolgreich</button>
-            </div>
-            <h6>Kontaktdaten</h6>
-            <div class="group-buttons">
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="data_spit">Kontaktdaten Spittelau</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="data_wn">Kontaktdaten WienerNetze</button>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="data_KS_allgemein">contact_data_KS</button>
-            </div>
+            <textarea id="outputArea" placeholder="Hier steht die Vorlage..."></textarea>
           </div>
-          <textarea id="outputArea" rows="40" cols="120" placeholder="Hier steht die Vorlage..."></textarea>
+
         </div>
 
         <script src="mailvorlagen.js"></script>
 
       </section>
-      <!-------------------------------------------------SECTION 2 END----------------------------------------------------------->
 
-      <!-------------------------------------------------SECTION 3 MATH---------------------------------------------------------->
+      <!----------------------------------
+      ███╗---███╗-█████╗-████████╗██╗--██╗
+      ████╗-████║██╔══██╗╚══██╔══╝██║--██║
+      ██╔████╔██║███████║---██║---███████║
+      ██║╚██╔╝██║██╔══██║---██║---██╔══██║
+      ██║-╚═╝-██║██║--██║---██║---██║--██║
+      ╚═╝-----╚═╝╚═╝--╚═╝---╚═╝---╚═╝--╚═╝
+      ----------------------------------->
+
       <section class="mdl-layout__tab-panel" id="scroll-tab-3">
         <div class="page-content">
 
@@ -518,9 +600,16 @@
           </div>
 
       </section>
-      <!-------------------------------------------------SECTION 3 END----------------------------------------------------------->
 
-      <!-------------------------------------------------SECTION 4 TIME---------------------------------------------------------->
+      <!-----------------------------
+      ████████╗██╗███╗---███╗███████╗
+      ╚══██╔══╝██║████╗-████║██╔════╝
+      ---██║---██║██╔████╔██║█████╗--
+      ---██║---██║██║╚██╔╝██║██╔══╝--
+      ---██║---██║██║-╚═╝-██║███████╗
+      ---╚═╝---╚═╝╚═╝-----╚═╝╚══════╝
+      ------------------------------>
+
       <section class="mdl-layout__tab-panel" id="scroll-tab-4">
         <div class="page-content">
 
@@ -606,7 +695,6 @@
             </div>
           </form>
 
-
         </div>
 
         <script>
@@ -617,7 +705,6 @@
           }
         </script>
       </section>
-      <!-------------------------------------------------SECTION 5 END----------------------------------------------------------->
 
     </main>
 
