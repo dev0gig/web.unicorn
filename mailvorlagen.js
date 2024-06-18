@@ -391,3 +391,39 @@ document.getElementById('grundgerüst').addEventListener('click', function () {
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
+
+
+
+
+document.getElementById('searchButton').addEventListener('click', function () {
+	const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+	const results = [];
+
+	for (const [key, value] of Object.entries(templates)) {
+		if (value.toLowerCase().includes(searchTerm)) {
+			results.push({ key, value });
+		}
+	}
+
+	displayResults(results);
+});
+
+function displayResults(results) {
+	const resultsDiv = document.getElementById('searchResults');
+	resultsDiv.innerHTML = '';
+
+	if (results.length === 0) {
+		resultsDiv.innerHTML = 'Keine Vorlagen gefunden.';
+		return;
+	}
+
+	results.forEach(result => {
+		const resultButton = document.createElement('button');
+		resultButton.textContent = result.key;
+		resultButton.addEventListener('click', function () {
+			document.getElementById('outputArea').value = result.value;
+		});
+
+		resultsDiv.appendChild(resultButton);
+	});
+}
