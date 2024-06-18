@@ -328,196 +328,41 @@
 
       <!-------------------------------------------------SECTION 2 MAIL---------------------------------------------------------->
       <section class="mdl-layout__tab-panel" id="scroll-tab-2">
-        <div class="page-content">
 
+        <div class="page-content">
           <div>
             <h2>Mail-Templates</h2>
-
             <h6>Grundgerüst</h6>
             <div class="group-buttons">
               <button class="mdl-button mdl-js-button mdl-button--raised" id="grundgerüst">Grundgerüst</button>
-              <script>
-                document.getElementById('grundgerüst').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/grundgerüst.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
               <button class="mdl-button mdl-js-button mdl-button--raised" id="tois_vorlage">Tois-Vorlage</button>
-              <script>
-                document.getElementById('tois_vorlage').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/tois_vorlage.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
             </div>
-
             <h6>Guthaben</h6>
             <div class="group-buttons">
               <button class="mdl-button mdl-js-button mdl-button--raised" id="abmeldung">Abmeldung</button>
-              <script>
-                document.getElementById('abmeldung').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/abmeldung.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszhalung_ausweis_fehlt">GH
-                Auszahlung, Ausweiskopie fehlt</button>
-              <script>
-                document.getElementById('gh_auszhalung_ausweis_fehlt').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/gh_auszhalung_ausweis_fehlt.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
+              <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszahlung_ausweis_fehlt">GH Auszahlung, Ausweiskopie fehlt</button>
               <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszahlung">GH Auszahlung</button>
-              <script>
-                document.getElementById('gh_auszahlung').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/gh_auszahlung.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="kdnr_benötigt">Kundennummer
-                benötigt</button>
-              <script>
-                document.getElementById('kdnr_benötigt').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/kdnr_benötigt.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
+              <button class="mdl-button mdl-js-button mdl-button--raised" id="kdnr_benötigt">Kundennummer benötigt</button>
               <button class="mdl-button mdl-js-button mdl-button--raised" id="rp">Ratenplan</button>
-              <script>
-                document.getElementById('rp').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/rp.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
-              <button class="mdl-button mdl-js-button mdl-button--raised"
-                id="rechnungskorrektur_zählerstände">Rechnungskorrektur
-                & Zählerstände</button>
-              <script>
-                document.getElementById('rechnungskorrektur_zählerstände').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/rechnungskorrektur_zählerstände.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
+              <button class="mdl-button mdl-js-button mdl-button--raised" id="rechnungskorrektur_zählerstände">Rechnungskorrektur & Zählerstände</button>
               <button class="mdl-button mdl-js-button mdl-button--raised" id="sonnenstrom">Sonnenstrom</button>
-              <script>
-                document.getElementById('sonnenstrom').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/sonnenstrom.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
               <button class="mdl-button mdl-js-button mdl-button--raised" id="verlassenschaft">Verlassenschaft</button>
-              <script>
-                document.getElementById('verlassenschaft').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/verlassenschaft.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
               <button class="mdl-button mdl-js-button mdl-button--raised" id="tw">Tarifwechsel</button>
-              <script>
-                document.getElementById('tw').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/tw.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
-              <button class="mdl-button mdl-js-button mdl-button--raised"
-                id="trockenlegungsbrief">Trockenlegungsbrief</button>
-              <script>
-                document.getElementById('trockenlegungsbrief').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/trockenlegungsbrief.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
-              <button class="mdl-button mdl-js-button mdl-button--raised" id="ummeldung_erfolgreich">Ummeldung
-                erfolgreich</button>
-              <script>
-                document.getElementById('ummeldung_erfolgreich').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/ummeldung_erfolgreich.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
+              <button class="mdl-button mdl-js-button mdl-button--raised" id="trockenlegungsbrief">Trockenlegungsbrief</button>
+              <button class="mdl-button mdl-js-button mdl-button--raised" id="ummeldung_erfolgreich">Ummeldung erfolgreich</button>
             </div>
-
             <h6>Kontaktdaten</h6>
             <div class="group-buttons">
               <button class="mdl-button mdl-js-button mdl-button--raised" id="data_spit">Kontaktdaten Spittelau</button>
-              <script>
-                document.getElementById('data_spit').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/data_spit.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
               <button class="mdl-button mdl-js-button mdl-button--raised" id="data_wn">Kontaktdaten WienerNetze</button>
-              <script>
-                document.getElementById('data_wn').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/data_wn.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
-              <button class="mdl-button mdl-js-button mdl-button--raised"
-                id="data_KS_allgemein">contact_data_KS</button>
-              <script>
-                document.getElementById('data_KS_allgemein').addEventListener('click', function () {
-                  fetch('assets/Mailvorlagen/data_KS_allgemein.txt') // Pfade anpassen!
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('outputArea').value = data;
-                    });
-                });
-              </script>
-
+              <button class="mdl-button mdl-js-button mdl-button--raised" id="data_KS_allgemein">contact_data_KS</button>
             </div>
-
           </div>
-
           <textarea id="outputArea" rows="40" cols="120" placeholder="Hier steht die Vorlage..."></textarea>
-
         </div>
+
+        <script src="mailvorlagen.js"></script>
+
       </section>
       <!-------------------------------------------------SECTION 2 END----------------------------------------------------------->
 
