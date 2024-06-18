@@ -19,6 +19,10 @@
     background-color: gainsboro;
   }
 
+  .mdl-layout__drawer{
+    overflow: hidden;
+  }
+
   .page-content {
     padding: 30px;
 
@@ -41,6 +45,22 @@
     flex-grow: 1;
     align-items: center;
   }
+
+  .nav_footer {
+    background-color: #242424;
+    color: whitesmoke;
+  }
+  .nav_warning {
+    padding: 5px;
+    background-color: purple;
+    color: whitesmoke;
+    font-size: large;
+
+    &:hover{
+      color: red;
+      background-color: yellow;
+    }
+  }
 </style>
 
 <body>
@@ -51,11 +71,6 @@
         <!-- Title -->
         <span class="mdl-layout-title">UNICORN by dev0gig (design from getmdl.io)</span>
         <div class="mdl-layout-spacer"></div>
-
-
-        <span style="font-size: x-large; background-color: purple; color: white; border: 5px solid purple;">⚠️ Nicht für den produktiven Gebrauch ⚠️</span>
-        <span style="font-size: x-large; background-color: purple; color: white; border: 5px solid purple;">| befindet sich noch in Entwicklung</span>
-
 
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation. We hide it in small screens. -->
@@ -79,7 +94,6 @@
       </div>
     </header>
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Wiener Stadtwerke</span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="https://www.wienerstadtwerke.at/" target="_blank"> <img
             src="https://www.wienerstadtwerke.at/image/layout_set_logo?img_id=18323761&t=1713959374804" /></a>
@@ -102,6 +116,13 @@
         <a class="mdl-navigation__link" href="https://www.immoh.at/" target="_blank"> <img
             src="https://www.immoh.at/image/layout_set_logo?img_id=18094283&t=1713959405431" height="40px" /></a>
       </nav>
+      <div class="mdl-layout-spacer"></div>
+      <div class="nav_warning">
+        ⚠️ Nicht für den produktiven Gebrauch ⚠️| befindet sich noch in Entwicklung
+      </div>
+      <div class="nav_footer">
+        🦄 UNICORN 🦄 | ©dev0gig | dev0ギガ | Patrick Giger | NGIPAV
+      </div>
     </div>
     <main class="mdl-layout__content">
 
@@ -692,7 +713,8 @@
             </div>
 
             <div>
-              <textarea type="text" id="time-text" rows="40" cols="50" placeholder="Sobald auf ein Button gedrückt wird, erscheint die Zeit mit Status..."></textarea>
+              <textarea type="text" id="time-text" rows="40" cols="50"
+                placeholder="Sobald auf ein Button gedrückt wird, erscheint die Zeit mit Status..."></textarea>
             </div>
 
             <script>
@@ -707,24 +729,6 @@
         </div>
       </section>
     </main>
-
-    <!---------------------------------------------------FOOTER------------------------------------------------------------------>
-    <footer class="mdl-mini-footer">
-      <div class="mdl-mini-footer__left-section">
-        <div class="mdl-logo">🦄 UNICORN 🦄</div>
-        <ul class="mdl-mini-footer__link-list">
-          <li>©dev0gig | dev0ギガ</li>
-          <li>Patrick Giger | NGIPAV</li>
-          <li></li>
-        </ul>
-      </div>
-      <div class="mdl-mini-footer__right-section">
-        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
-          onclick="window.window.open('https://dev0gig.github.io/web.appdrawer/')">
-          <i class="material-icons">home</i>
-        </button>
-      </div>
-    </footer>
 
 </body>
 
