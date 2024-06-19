@@ -169,9 +169,7 @@ document.getElementById('verlassenschaft').addEventListener('click', function ()
 
 wir möchten Ihnen unser aufrichtiges Beileid aussprechen. Es tut uns sehr leid, von Ihrem Verlust zu hören. 
 
-Wir haben das Sterbedatum nun in unseren Unterlagen eingetragen, um sicherzustellen, dass alle relevanten Informationen korrekt erfasst sind. Sollten Sie weitere Fragen oder Anliegen haben, zögern Sie bitte nicht, sich an uns zu wenden. Wir sind hier, um Ihnen zu helfen.
-
-Nochmals möchten wir Ihnen unser tiefstes Mitgefühl aussprechen. Wir hoffen, dass Sie in dieser Zeit der Trauer Trost und Unterstützung finden.`;
+Wir haben das Sterbedatum nun in unseren Unterlagen eingetragen, um sicherzustellen, dass alle relevanten Informationen korrekt erfasst sind. Sollten Sie weitere Fragen oder Anliegen haben, zögern Sie bitte nicht, sich an uns zu wenden. Wir sind hier, um Ihnen zu helfen.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
