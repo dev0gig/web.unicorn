@@ -22,12 +22,33 @@ Bitte auf diese Nachricht nicht direkt antworten, sondern bei weiteren Fragen di
 Wussten Sie schon?
 Sie können Ihre Rechnungen jederzeit in Ihrem persönlichen Kundenbereich unter meine.wienenergie.at einsehen.
 
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung
+
 Freundliche Grüße und danke für Ihr Vertrauen,
 
 Wien Energie Kundenberatung
 
 www.wienenergie.at/kontakt
 www.wienenergie.at/impressum`;
+
+	document.getElementById('outputArea').value = mailVorlage;
+});
+
+// #####################################################################################################################
+
+document.getElementById('anmeldung').addEventListener('click', function () {
+	const mailVorlage = `Guten Tag,
+Das ist leider so nicht möglich.
+Wenn der Stromvertrag auf einen anderen Mieter laufen soll, benötigen wir einen Neuanmeldung.
+
+1. Der neue Mieter meldet sich auf unserer Homepage an.
+2. Der neue MIeter meldet sich telefonisch bei uns und gibt alle Daten durch, danach können wir ein Angebot per Mail zukommen lassen.
+3. Der neue Mieter meldet sich mit allen Daten bei uns, inklusive gewünschter Tarif, danach können wir ebenso ein Angebot zukommen lassen.
+
+Bezüglich der Fernwärme: Die Fernwärme läuft immer auf den Hauptmieter, diesen Vertrag kann man leider nicht so ändern.
+Sollte sich der Hauptmieter ändern - läuft einen Ummeldung über die Hausverwaltung.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -101,13 +122,13 @@ Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 document.getElementById('rp').addEventListener('click', function () {
 	const mailVorlage = `Guten Tag,
 
-vielen Dank für Ihre Anfrage bezüglich eines Ratenplans.
+vielen Dank für Ihre Nachricht.
 
-Wie von Ihnen gewünscht, haben wir einen Ratenplan erstellt, der Ihnen in den nächsten Tagen per Post zugestellt wird.
+Gerne haben wir den gewünschten Tarenplan erstellt.
+Bitte beachten Sie, dass Sie alle Raten pünktlichan dem Datum überweisen, welches am Plan angeschrieben ist.
+Bitte nicht zu viel oder zu wenig überweisen, da sich sonst der Ratenplan storniert.
 
-Der Ratenplan beinhaltet alle Informationen zu den einzelnen Raten und den Fälligkeitsterminen.
-
-Sollten Sie vorab Fragen zu dem Ratenplan haben, zögern Sie bitte nicht, uns zu kontaktieren.`;
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -172,7 +193,9 @@ document.getElementById('verlassenschaft').addEventListener('click', function ()
 
 wir möchten Ihnen unser aufrichtiges Beileid aussprechen. Es tut uns sehr leid, von Ihrem Verlust zu hören. 
 
-Wir haben das Sterbedatum nun in unseren Unterlagen eingetragen, um sicherzustellen, dass alle relevanten Informationen korrekt erfasst sind. Sollten Sie weitere Fragen oder Anliegen haben, zögern Sie bitte nicht, sich an uns zu wenden. Wir sind hier, um Ihnen zu helfen.`;
+Wir haben das Sterbedatum nun in unseren Unterlagen eingetragen, um sicherzustellen, dass alle relevanten Informationen korrekt erfasst sind.
+
+Sollten Sie weitere Fragen oder Anliegen haben, zögern Sie bitte nicht, sich an uns zu wenden. Wir sind hier, um Ihnen zu helfen.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -185,7 +208,8 @@ document.getElementById('trockenlegungsbrief').addEventListener('click', functio
 vielen Dank für Ihre Nachricht.
 
 Wie gewünscht, senden wir Ihnen im Anhang den Trockenlegungsbrief.
-Bitte reichen Sie diesen bei Ihrer Hausverwaltung oder Haushaltsversicherung ein, um eine Erstattung für die entstandenen Mehrkosten zu erhalten.`;
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
