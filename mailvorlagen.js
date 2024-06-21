@@ -152,12 +152,15 @@ vielen Dank für Ihre Nachricht!
 
 Bitte senden Sie uns die folgenden Unterlagen vollständig und unterschrieben zurück:
 
-Wien Energie Sonnenstrom Liefervertrag (Seite 1-7, Seite 7 unterschrieben)
-Vollmacht (unterschrieben)
-Energie Control GmbH Blatt (unterschrieben)
+- Wien Energie Sonnenstrom Liefervertrag (Seite 1-6, Seite 6 unterschrieben)
+- Datenschutz (unterschrieben)
+- Vollmacht (unterschrieben)
+- Energie Control GmbH Blatt (unterschrieben)
 Wichtig: Ohne diese Unterlagen kann keine Anmeldung Ihrer Photovoltaikanlage erfolgen.
 
-Nach dem Erhalt der Unterlagen, können wir die Anmeldung für Sonnenstrom schnellstmöglich veranlassen.`;
+Nach dem Erhalt der Unterlagen, können wir die Anmeldung für Sonnenstrom schnellstmöglich veranlassen.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -181,7 +184,8 @@ document.getElementById('trockenlegungsbrief').addEventListener('click', functio
 
 vielen Dank für Ihre Nachricht.
 
-Wie gewünscht, senden wir Ihnen im Anhang den Trockenlegungsbrief. Bitte reichen Sie diesen bei Ihrer Hausverwaltung oder Haushaltsversicherung ein, um eine Erstattung für die entstandenen Mehrkosten zu erhalten.`;
+Wie gewünscht, senden wir Ihnen im Anhang den Trockenlegungsbrief.
+Bitte reichen Sie diesen bei Ihrer Hausverwaltung oder Haushaltsversicherung ein, um eine Erstattung für die entstandenen Mehrkosten zu erhalten.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -344,8 +348,13 @@ Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 
 // #####################################################################################################################
 
-document.getElementById('grundgerüst').addEventListener('click', function () {
-	const mailVorlage = ``;
+document.getElementById('data_inkasso').addEventListener('click', function () {
+	const mailVorlage = `Riverty Services Austria GmbH - Forderungsmanagement - Inkasso
+
+Adresse: Gertrude-Fröhlich-Sandner-Straße 1/2, 1100 Wien
+Telefon: +43 01 503 64 90
+Mail: info.at@riverty.com
+Web: https://www.riverty.com/at/business/`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
