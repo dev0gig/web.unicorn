@@ -123,8 +123,8 @@
       </nav>
       <div class="mdl-layout-spacer"></div>
       <div class="nav_warning">
-        <a
-          href="https://docs.google.com/document/d/e/2PACX-1vS01TLWA70_O5KpWqWH7JS4j231wjJXa3VgrDBFVT5K7EliPDMYhwBCnfknZM-VA5GTxJNGRVgtoHCp/pub" target="_blank">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vS01TLWA70_O5KpWqWH7JS4j231wjJXa3VgrDBFVT5K7EliPDMYhwBCnfknZM-VA5GTxJNGRVgtoHCp/pub"
+          target="_blank">
           ⚠️Nicht für den produktiven Gebrauch ⚠️| befindet sich noch in Entwicklung</a>
       </div>
       <div class="nav_footer">
@@ -376,26 +376,26 @@
           </style>
           <div class="mail_grid">
             <div class="mail_button_flex">
-              <!-- Suche -->
-              <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="width: 100%;">
+
+              <!-- Kontaktdaten -->
+              <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Kontaktdaten</h2>
+                </div>
                 <div class="mdl-card__supporting-text">
-                  <!-- Search -->
-                  <div
-                    class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-                    <label class="mdl-button mdl-js-button mdl-button--icon" for="searchInput">
-                      <i class="material-icons">search</i>
-                    </label>
-                    <div class="mdl-textfield__expandable-holder">
-                      <input class="mdl-textfield__input" type="text" id="searchInput"
-                        placeholder="Suchebegriff eingeben">
-                    </div>
+                  <div class="group-buttons">
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="data_spit">Kontaktdaten
+                      Spittelau</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="data_wn">Kontaktdaten
+                      WienerNetze</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised"
+                      id="data_KS_allgemein">contact_data_KS</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="data_inkasso">Kontaktdaten
+                      Inkassobüro</button>
                   </div>
                 </div>
-                ! Die Suchfunktion fickt mich !
               </div>
-              <script>
-                const searchInput = document.querySelector('#searchInput');
-              </script>
+
               <!-- Grundaufbau -->
               <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
@@ -408,6 +408,7 @@
                   </div>
                 </div>
               </div>
+
               <!-- Strom & Gas -->
               <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
@@ -437,6 +438,7 @@
                   </div>
                 </div>
               </div>
+
               <!-- Wärme -->
               <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
@@ -448,26 +450,11 @@
                   </div>
                 </div>
               </div>
-              <!-- Kontaktdaten -->
-              <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title">
-                  <h2 class="mdl-card__title-text">Kontaktdaten</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                  <div class="group-buttons">
-                    <button class="mdl-button mdl-js-button mdl-button--raised" id="data_spit">Kontaktdaten
-                      Spittelau</button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised" id="data_wn">Kontaktdaten
-                      WienerNetze</button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised"
-                      id="data_KS_allgemein">contact_data_KS</button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised" id="data_inkasso">Kontaktdaten
-                      Inkassobüro</button>
-                  </div>
-                </div>
-              </div>
+
             </div>
+
             <textarea id="outputArea" placeholder="Hier steht die Vorlage..."></textarea>
+
           </div>
 
         </div>
