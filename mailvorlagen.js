@@ -245,11 +245,7 @@ Sollten Sie noch Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.`;
 // #####################################################################################################################
 
 document.getElementById('data_KS_allgemein').addEventListener('click', function () {
-	const mailVorlage = `Wien Energie Servicezentren: 
-
-Übersicht Standorte:
-
-Service Treff Spittelau:
+	const mailVorlage = `Service Treff Spittelau:
 
 Adresse: Spittelauer Lände 45, 1090 Wien
 
@@ -260,6 +256,8 @@ Fr: 8:00-15:00 Uhr (mit Termin bis 16:00 Uhr)
 Terminvereinbarung: https://www.servicetreff.at/
 
 Hinweis: Tiere (ausgenommen Assistenzhunde) sind nicht erlaubt.
+
+##################################################################
 
 Servicepoint Erdberg:
 
@@ -272,6 +270,8 @@ Fr: 8:00-15:00 Uhr (mit Termin bis 16:00 Uhr)
 Terminvereinbarung: https://www.servicetreff.at/
 
 Hinweis: Tiere (ausgenommen Assistenzhunde) sind nicht erlaubt.
+
+##################################################################
 
 Servicepoint Guntramsdorf:
 
