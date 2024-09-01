@@ -45,6 +45,24 @@
     gap: 10px;
   }
 
+  .app {
+    margin-right: 10px;
+
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px #000000A0;
+
+    cursor: pointer;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+
   .demo-card-wide {
     border: 1px solid gray;
     border-radius: 10px;
@@ -60,7 +78,6 @@
     border-radius: 5px;
     box-shadow: 0px 3px 5px #00000050;
   }
-
 </style>
 
 <body>
@@ -218,6 +235,10 @@
                   onclick="window.open('http://intranet-wswdb/knowledgecenter/scXml.do?page=de.usu.infoboard%3AscInfoboard')">
                   IWPF
                 </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised"
+                  onclick="window.open('http://sdetpwe:8030/DET_Admin')">
+                  DET-Auftäge löschen
+                </button>
               </div>
             </div>
           </div>
@@ -228,13 +249,32 @@
               <h2 class="mdl-card__title-text">Andere Links</h2>
             </div>
             <div class="mdl-card__supporting-text">
-              <div class="oneline-buttons">
-                <button class="mdl-button mdl-js-button mdl-button--raised"
-                  onclick="window.open('http://sdetpwe:8030/DET_Admin')">
-                  DET-Auftäge löschen
-                </button>
-              </div>
+              <button class="app" title="GoogleMaps" data-url="https://www.google.at/maps/preview"
+                data-img="https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA=w240-h480">
+              </button>
+              <button class="app" title="DeepL" data-url="https://www.deepl.com/de/translator"
+                data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtY2OSMHZ2in6KokfTWcVui9ormuUlW-_y-g&s">
+              </button>
+              <button class="app" title="MA40"
+                data-url="https://mein.wien.gv.at/formularserver-mw/user/formular.aspx?path=(mw%2fstandard)&pid=06a2e3ecbb6b4302b4f134a505de83b8&pn=B907a1748c4e94b018a206b9eecbad4e1&data=%3cah%3e0%3c%2fah%3e">MA40</button>
             </div>
+
+            <script>
+              const buttons = document.querySelectorAll(".app");
+              // url
+              buttons.forEach((button) => {
+                button.addEventListener("click", () => {
+                  const url = button.dataset.url;
+                  window.open(url, '_blank');
+                });
+                // img
+                buttons.forEach(function (button) {
+                  const imgURL = button.dataset.img;
+                  button.style.backgroundImage = `url(${imgURL})`;
+                });
+              });
+            </script>
+
           </div>
 
 
