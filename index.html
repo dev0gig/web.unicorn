@@ -29,7 +29,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: auto;
 
     gap: 20px;
   }
@@ -40,31 +39,31 @@
     gap: 10px;
   }
 
+  .oneline-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
   .demo-card-wide {
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px #00000050;
+
     display: flex;
-    flex-grow: 1;
+    flex: 400px;
     align-items: center;
+  }
+
+  textarea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px #00000050;
   }
 
   .nav_footer {
     background-color: #242424;
     color: whitesmoke;
-  }
-
-  .nav_warning {
-    padding: 5px;
-    background-color: purple;
-    color: whitesmoke;
-    font-size: large;
-
-    &:hover {
-      color: red;
-      background-color: yellow;
-    }
-
-    a {
-      text-decoration: none;
-    }
   }
 </style>
 
@@ -92,10 +91,15 @@
       </div>
       <!-- Tabs -->
       <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-        <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Copilot</a>
-        <a href="#scroll-tab-2" class="mdl-layout__tab">Mail-Templates</a>
+        <a href="#scroll-tab-1" class="mdl-layout__tab is-active" style="background-color: greenyellow;">Copilot</a>
+        <a href="#scroll-tab-2" class="mdl-layout__tab"
+          style="background-color: royalblue; color: wheat;">Mail-Templates</a>
         <a href="#scroll-tab-3" class="mdl-layout__tab">FET-Calculator</a>
-        <a href="#scroll-tab-4" class="mdl-layout__tab">Time-Tracking</a>
+        <a href="#scroll-tab-4" class="mdl-layout__tab" style="background-color: violet;">Time-Tracking</a>
+        <a href="#scroll-tab-5" class="mdl-layout__tab">ᕕ(⌐■_■)ᕗ ♪♬</a>
+        <a href="#scroll-tab-6" class="mdl-layout__tab">(✿◠‿◠)</a>
+        <a href="#scroll-tab-7" class="mdl-layout__tab">༼ つ ◕_◕ ༽つ</a>
+        <a href="#scroll-tab-8" class="mdl-layout__tab" style="background-color: tomato;">⚠️</a>
       </div>
     </header>
     <div class="mdl-layout__drawer">
@@ -122,11 +126,6 @@
             src="https://www.immoh.at/image/layout_set_logo?img_id=18094283&t=1713959405431" height="40px" /></a>
       </nav>
       <div class="mdl-layout-spacer"></div>
-      <div class="nav_warning">
-        <a href="https://docs.google.com/document/d/e/2PACX-1vS01TLWA70_O5KpWqWH7JS4j231wjJXa3VgrDBFVT5K7EliPDMYhwBCnfknZM-VA5GTxJNGRVgtoHCp/pub"
-          target="_blank">
-          ⚠️Nicht für den produktiven Gebrauch ⚠️| befindet sich noch in Entwicklung</a>
-      </div>
       <div class="nav_footer">
         🦄 UNICORN 🦄 | ©dev0gig | dev0ギガ | Patrick Giger | NGIPAV
       </div>
@@ -144,22 +143,42 @@
 
       <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
         <div class="page-content">
-          <!-- Häufige Links -->
+
+          <!-- Mittagspausen & Sitzplan -->
           <div class="demo-card-wide mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Häufige Links</h2>
+              <h2 class="mdl-card__title-text">Mittagspausen & Sitzplan</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <div class="oneline-buttons">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  onclick="window.open('https://wstw365.sharepoint.com/:x:/r/sites/msteams_8cb9ed-KSA-SPErdberg/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B79c7fd17-3b8b-4f6b-9e7e-b6f96c0d6cd8%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1709636253264&web=1')">
+                  Mittagsplan
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  onclick="window.open('https://')">
+                  HO/Flexi - Mittagsplan
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  onclick="window.open('https://wstw365.sharepoint.com/:x:/r/sites/msteams_8cb9ed-KSA-SPErdberg/_layouts/15/Doc.aspx?sourcedoc=%7B4A5869C9-A49F-41A1-8BB8-AC2A80484B92%7D&file=Sitzplatzbuchung_Erdberg%201.xlsx&action=default&mobileredirect=true')">
+                  Sitzplan-CB08
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised"
+                  onclick="window.open('https://apps.powerapps.com/play/e/0089faf5-df22-4012-a29b-93b3d081d5da/a/c9242c89-c412-4a5c-94fe-29e2a847c0d2?tenantId=2df2bcec-2017-4339-b493-e3d7b3a460c8&hint=77f70e51-131f-4968-9872-f617488b1244&skipmetadata=true')">
+                  DeskFinder
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- System -->
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">System</h2>
             </div>
             <div class="mdl-card__supporting-text">
               <div class="group-buttons">
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                  onclick="window.open('https://wstw365.sharepoint.com/:x:/r/sites/msteams_8cb9ed-KSA-SPErdberg/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B79c7fd17-3b8b-4f6b-9e7e-b6f96c0d6cd8%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1709636253264&web=1')">
-                  Mittagsplan
-                </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                  onclick="window.open('https://wstw365.sharepoint.com/:x:/r/sites/msteams_8cb9ed-KSA-SPErdberg/_layouts/15/Doc.aspx?sourcedoc=%7B4A5869C9-A49F-41A1-8BB8-AC2A80484B92%7D&file=Sitzplatzbuchung_Erdberg%201.xlsx&action=default&mobileredirect=true')">
-                  Sitzplan-CB08
-                </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
                   onclick="window.open('https://aufrufsystem/nova/Tickets')">
                   Ausrufsystem
                 </button>
@@ -187,17 +206,13 @@
             </div>
           </div>
 
-          <!-- Wichtige Links -->
+          <!-- Sonstige Wichtige Links -->
           <div class="demo-card-wide mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Wichtige Links</h2>
+              <h2 class="mdl-card__title-text"> Sonstige wichtige Links</h2>
             </div>
             <div class="mdl-card__supporting-text">
               <div class="group-buttons">
-                <button class="mdl-button mdl-js-button mdl-button--raised"
-                  onclick="window.open('https://www.wien.gv.at/amtshelfer/gesundheit/gesundheitsrecht/sozialhilfe/energieunterstuetzung-plus.html')">
-                  MA40 Formular
-                </button>
                 <button class="mdl-button mdl-js-button mdl-button--raised"
                   onclick="window.open('https://tois/we-mysite/index.php')">
                   tois
@@ -210,13 +225,25 @@
                   onclick="window.open('http://intranet-wswdb/knowledgecenter/scXml.do?page=de.usu.infoboard%3AscInfoboard')">
                   IWPF
                 </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Andere Links -->
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Andere Links</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <div class="oneline-buttons">
                 <button class="mdl-button mdl-js-button mdl-button--raised"
-                  onclick="window.open('https://apps.powerapps.com/play/e/0089faf5-df22-4012-a29b-93b3d081d5da/a/c9242c89-c412-4a5c-94fe-29e2a847c0d2?tenantId=2df2bcec-2017-4339-b493-e3d7b3a460c8&hint=77f70e51-131f-4968-9872-f617488b1244&skipmetadata=true')">
-                  DeskFinder
+                  onclick="window.open('http://sdetpwe:8030/DET_Admin')">
+                  DET-Auftäge löschen
                 </button>
               </div>
             </div>
           </div>
+
 
           <!-- Strom & Gas -->
           <div class="demo-card-wide mdl-card mdl-shadow--2dp">
@@ -274,18 +301,6 @@
             </div>
           </div>
 
-          <!-- SuperSchnell -->
-          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">SuperSchnell</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              <div class="group-buttons">
-
-              </div>
-            </div>
-          </div>
-
           <!-- Fernwärme -->
           <div class="demo-card-wide mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
@@ -305,6 +320,18 @@
             </div>
           </div>
 
+          <!-- SuperSchnell -->
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">SuperSchnell</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <div class="group-buttons">
+
+              </div>
+            </div>
+          </div>
+
           <!-- Wiener Netze -->
           <div class="demo-card-wide mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
@@ -319,21 +346,6 @@
                 <button class="mdl-button mdl-js-button mdl-button--raised"
                   onclick="window.open('https://outlook.office.com/mail/rueckstand@wienernetze.at/')">
                   Backlog
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Andere Links -->
-          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Andere Links</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              <div class="group-buttons">
-                <button class="mdl-button mdl-js-button mdl-button--raised"
-                  onclick="window.open('http://sdetpwe:8030/DET_Admin')">
-                  DET-Auftäge löschen
                 </button>
               </div>
             </div>
@@ -397,7 +409,7 @@
                   <h2 class="mdl-card__title-text">Grundgerüst</h2>
                 </div>
                 <div class="mdl-card__supporting-text">
-                  <div class="group-buttons">
+                  <div class="oneline-buttons">
                     <button class="mdl-button mdl-js-button mdl-button--raised" id="grundgeruest">Grundgerüst</button>
                     <button class="mdl-button mdl-js-button mdl-button--raised" id="tois_vorlage">Tois-Vorlage</button>
                   </div>
@@ -413,10 +425,6 @@
                   <div class="group-buttons">
                     <button class="mdl-button mdl-js-button mdl-button--raised" id="anmeldung">Anmeldung</button>
                     <button class="mdl-button mdl-js-button mdl-button--raised" id="abmeldung">Abmeldung</button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszahlung_ausweis_fehlt">GH, ID
-                      fehlt</button>
-                    <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszahlung">GH
-                      Auszahlung</button>
                     <button class="mdl-button mdl-js-button mdl-button--raised" id="kdnr_benötigt">Kundennummer
                       benötigt</button>
                     <button class="mdl-button mdl-js-button mdl-button--raised" id="rp">Ratenplan</button>
@@ -434,6 +442,21 @@
                 </div>
               </div>
 
+              <!-- Guthaben -->
+              <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                  <h2 class="mdl-card__title-text">Guthaben</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  <div class="oneline-buttons">
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszahlung_ausweis_fehlt">GH, ID
+                      fehlt</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised" id="gh_auszahlung">GH
+                      Auszahlung</button>
+                  </div>
+                </div>
+              </div>
+
               <!-- Wärme -->
               <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title">
@@ -442,6 +465,8 @@
                 <div class="mdl-card__supporting-text">
                   <div class="group-buttons">
                     <button class="mdl-button mdl-js-button mdl-button--raised" id="waerme_anm">Anmeldung</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised"
+                      id="waerme_an-/abm">An-/Abmeldung</button>
                   </div>
                 </div>
               </div>
@@ -724,6 +749,57 @@
         </div>
       </section>
 
+      <section class="mdl-layout__tab-panel is-active" id="scroll-tab-5">
+        <div class="page-content">
+
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__supporting-text">
+              <img src="https://w.wallhaven.cc/full/7p/wallhaven-7p786y.jpg" width="1700px">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="mdl-layout__tab-panel is-active" id="scroll-tab-6">
+        <div class="page-content">
+
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__supporting-text">
+              <img src="https://w.wallhaven.cc/full/vq/wallhaven-vqy81l.png" width="1700px">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="mdl-layout__tab-panel is-active" id="scroll-tab-7">
+        <div class="page-content">
+
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__supporting-text">
+              <img src="https://w.wallhaven.cc/full/57/wallhaven-5716e1.jpg" width="1700px">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="mdl-layout__tab-panel is-active" id="scroll-tab-8">
+        <div class="page-content">
+
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__supporting-text">
+              <p style="text-align: center; font-size: xx-large;  line-height: 1.5; color: indigo">Diese gesamte
+                Webseite ist von mir
+                selbstständig gecodet und daher nicht auf Fehler oder Probleme geprüft und somit nicht zur produktiven
+                Verwendung gedacht!</p>
+              <p>© NGIPAV | Patrick Giger</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
 
 </body>

@@ -37,18 +37,20 @@ www.wienenergie.at/impressum`;
 // #####################################################################################################################
 
 document.getElementById('anmeldung').addEventListener('click', function () {
-	const mailVorlage = `Guten Tag,
-Das ist leider so nicht möglich.
-Wenn der Stromvertrag auf einen anderen Mieter laufen soll, benötigen wir einen Neuanmeldung.
+	const mailVorlage = `
+Guten Tag,
 
-1. Der neue Mieter meldet sich auf unserer Homepage an.
-2. Der neue MIeter meldet sich telefonisch bei uns und gibt alle Daten durch, danach können wir ein Angebot per Mail zukommen lassen.
-3. Der neue Mieter meldet sich mit allen Daten bei uns, inklusive gewünschter Tarif, danach können wir ebenso ein Angebot zukommen lassen.
+vielen Dank für Ihr Interesse an einer Neuanmeldung bei WienEnergie. Um Ihre Anfrage bearbeiten und Ihnen einen Vertrag für die Neuanmeldung zusenden zu können, benötigen wir folgende Daten:
 
-Bezüglich der Fernwärme: Die Fernwärme läuft immer auf den Hauptmieter, diesen Vertrag kann man leider nicht so ändern.
-Sollte sich der Hauptmieter ändern - läuft einen Ummeldung über die Hausverwaltung.
+- Ihren vollständigen Namen
+- Ihre Adresse
+- Ihr Geburtsdatum
+- Ihre Telefonnummer
+- Ihre E-Mail-Adresse
 
-Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
+Sobald uns diese Informationen vorliegen, werden wir Ihnen umgehend den entsprechenden Vertrag zusenden.
+
+Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -58,13 +60,12 @@ Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 document.getElementById('abmeldung').addEventListener('click', function () {
 	const mailVorlage = `Guten Tag,
 				
-wir haben Ihre Abmeldung vom Vertrag [Vertragsnummer] erhalten und wie gewünscht eingetragen.
-
-Der Vertrag endet daher unter Einhaltung der 14-tägigen Kündigungsfrist am [Datum].
+wir bestätigen den Erhalt Ihrer Abmeldung vom Vertrag [Vertragsnummer] und haben diese wie gewünscht eingetragen.
+Der Vertrag endet gemäß der 14-tägigen Kündigungsfrist am [Datum].
 
 Für die Erstellung Ihrer Schlussrechnung benötigen wir Ihre Kontaktadresse. Bitte teilen Sie uns mit, ob Sie die Schlussrechnung per Post oder per E-Mail erhalten möchten.
 
-Sollten Sie noch Fragen haben, stehen wir Ihnen gerne zur Verfügung.`;
+Sollten Sie noch Fragen haben, stehen wir Ihnen selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -72,17 +73,11 @@ Sollten Sie noch Fragen haben, stehen wir Ihnen gerne zur Verfügung.`;
 // #####################################################################################################################
 
 document.getElementById('gh_auszahlung_ausweis_fehlt').addEventListener('click', function () {
-	const mailVorlage = `Guten Tag,
+	const mailVorlage = `Vielen Dank für Ihre Anfrage.
 
-vielen Dank für Ihre Nachricht!
+Um Ihre Bankverbindung zu hinterlegen und Ihr Guthaben auszuzahlen, benötigen wir zur Authentifizierung eine Ausweiskopie. Dies dient ausschließlich der Betrugsprävention und gewährleistet die Sicherheit Ihrer Auszahlung. Die von Ihnen beigefügte Ausweiskopie wird nicht in unserem System gespeichert, sondern dient ausschließlich Ihrer Identifikation und wird nach dem Datenabgleich unwiderruflich gelöscht.
 
-Um Ihr Guthaben auszahlen zu können, benötigen wir von Ihnen einen gültigen Lichtbildausweis. Dies dient lediglich der Legitimation und Ihre Daten werden selbstverständlich nicht gespeichert (DSGVO).
-
-Bitte schicken Sie uns Ihren Lichtbildausweis oder bringen Sie ihn persönlich in unseren Service Treff in der Spittelau vorbei.
-
-Sollten Sie in der Zwischenzeit Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.
-
-Vielen Dank für Ihre Mitarbeit!`;
+Wenn Sie keine Ausweiskopie per E-Mail senden möchten, können Sie Ihren Ausweis auch in einem unserer Servicecenter vorweisen.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -90,13 +85,11 @@ Vielen Dank für Ihre Mitarbeit!`;
 // #####################################################################################################################
 
 document.getElementById('gh_auszahlung').addEventListener('click', function () {
-	const mailVorlage = `Guten Tag,
+	const mailVorlage = `Vielen Dank für Ihre Anfrage.
 
-vielen Dank für Ihre Nachricht.
+Die Authentifizierung mittels Ihrer Ausweiskopie wurde erfolgreich durchgeführt. Die von Ihnen beigefügte Ausweiskopie wurde nicht in unserem System gespeichert, sondern diente ausschließlich Ihrer Identifikation und wurde nach dem Abgleich Ihrer Daten unwiderruflich gelöscht.
 
-Wie von Ihnen gewünscht, wird Ihr Guthaben in den nächsten 7-10 Werktagen auf das von Ihnen angegebene Konto überwiesen.
-
-Sollten Sie in der Zwischenzeit Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.`;
+Ihre Gutschrift erhalten Sie innerhalb der nächsten Werktage auf Ihr angegebenes Bankkonto überwiesen.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -108,11 +101,10 @@ document.getElementById('kdnr_benötigt').addEventListener('click', function () 
 
 vielen Dank für Ihre Nachricht.
 
-Um Ihre Anfrage weiter bearbeiten zu können, benötigen wir bitte noch Ihre Kundennummer oder Vertragskontonummer.
+um Ihre Anfrage weiter bearbeiten zu können, benötigen wir bitte noch Ihre Kundennummer oder Ihre Vertragskontonummer.
+Ihre Kundennummer beginnt mit "12", Ihre Vertragskontonummer beginnt mit "22".
 
-Ihre Kundennummer beginnt mit 12, Ihre Vertragskontonummer hingegen mit 22.
-
-Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
+Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -124,9 +116,10 @@ document.getElementById('rp').addEventListener('click', function () {
 
 vielen Dank für Ihre Nachricht.
 
-Gerne haben wir den gewünschten Tarenplan erstellt.
-Bitte beachten Sie, dass Sie alle Raten pünktlichan dem Datum überweisen, welches am Plan angeschrieben ist.
-Bitte nicht zu viel oder zu wenig überweisen, da sich sonst der Ratenplan storniert.
+gerne haben wir den gewünschten Ratenplan für Sie erstellt.
+Bitte beachten Sie, dass die Raten pünktlich an den im Plan angegebenen Terminen überwiesen werden müssen. Achten Sie darauf, den exakten Betrag zu überweisen, da der Ratenplan ansonsten storniert wird.
+
+Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.
 
 Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 
@@ -140,26 +133,22 @@ document.getElementById('rechnungskorrektur_zählerstände').addEventListener('c
 
 vielen Dank für Ihre Nachricht! 
 
-Für eine Rechnungskorrektur betreffend der Zählerstände, bitten wir Sie sich direkt mit den Wiener Netze GmbH in Verbindung zu setzen. 
+für eine Korrektur Ihrer Rechnung bezüglich der Zählerstände bitten wir Sie, sich direkt mit der Wiener Netze GmbH in Verbindung zu setzen.
 
-Wiener Netze GmbH Kundenservice Kontaktinformationen: 
+Hier die Kontaktdaten der Wiener Netze GmbH Kundenservice:
 
-Allgemeine Anfragen: 050 128-10100 (Mo-Fr 08:00-17:00) 
-E-Mail: info@wienernetze.at 
+Allgemeine Anfragen: 050 128-10100 (Mo-Fr 08:00-17:00)
+E-Mail: info@wienernetze.at
+Adresse: 1090 Wien, Spittelauer Lände 45
 
-Adresse: 1090 Wien, Spittelauer Lände 45 
-Öffnungszeiten: 
+Öffnungszeiten:
+Montag, Dienstag, Mittwoch, Freitag: 08:00 - 15:00
+Donnerstag: 08:00 - 17:30
 
-Montag, Dienstag, Mittwoch, Freitag: 08:00 - 15:00 
-Donnerstag: 08:00 - 17:30 
+Weitere Informationen finden Sie auf der Website des Service Treffs: www.servicetreff.at
+Bitte beachten Sie, dass Sie auch die Möglichkeit haben, einen Rückruf für allgemeine Anfragen sowie Fragen zu Smart Metern zu buchen. Für Beschwerden und Baustellenauskunft stehen separate Telefonnummern zur Verfügung. Detaillierte Informationen und Online-Services finden Sie auf der Website der Wiener Netze: www.wienernetze.at
 
-Weitere Informationen: 
-https://www.servicetreff.at/
-
-Zusätzliche Hinweise: 
-Sie können einen Rückruf für allgemeine Anfragen und Anfragen rund um Smart Meter buchen. 
-Es gibt separate Telefonnummern für Beschwerden und Baustellenauskunft. 
-Weitere Informationen und Online-Services finden Sie auf der Website der Wiener Netze: https://www.wienernetze.at/`;
+Für weitere Fragen stehen wir Ihnen gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -173,13 +162,13 @@ vielen Dank für Ihre Nachricht!
 
 Bitte senden Sie uns die folgenden Unterlagen vollständig und unterschrieben zurück:
 
-- Wien Energie Sonnenstrom Liefervertrag (Seite 1-6, Seite 6 unterschrieben)
-- Datenschutz (unterschrieben)
-- Vollmacht (unterschrieben)
-- Energie Control GmbH Blatt (unterschrieben)
-Wichtig: Ohne diese Unterlagen kann keine Anmeldung Ihrer Photovoltaikanlage erfolgen.
+- Wien Energie Sonnenstrom Liefervertrag (Seiten 1-6, Seite 6 unterschrieben)
+- Datenschutzvereinbarung (unterschrieben)
+- Vollmacht (unterschrieben)
+- Energie Control GmbH Dokument (unterschrieben)
 
-Nach dem Erhalt der Unterlagen, können wir die Anmeldung für Sonnenstrom schnellstmöglich veranlassen.
+Bitte beachten Sie, dass ohne die vollständige Einreichung dieser Unterlagen keine Anmeldung Ihrer Photovoltaikanlage erfolgen kann.
+Sobald wir die Unterlagen erhalten haben, werden wir die Anmeldung für Sonnenstrom umgehend veranlassen.
 
 Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 
@@ -191,11 +180,11 @@ Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 document.getElementById('verlassenschaft').addEventListener('click', function () {
 	const mailVorlage = `Guten Tag,
 
-wir möchten Ihnen unser aufrichtiges Beileid aussprechen. Es tut uns sehr leid, von Ihrem Verlust zu hören. 
+wir möchten Ihnen unser aufrichtiges Beileid aussprechen und bedauern zutiefst, von Ihrem Verlust zu erfahren.
 
-Wir haben das Sterbedatum nun in unseren Unterlagen eingetragen, um sicherzustellen, dass alle relevanten Informationen korrekt erfasst sind.
+Wir haben das Sterbedatum in unseren Unterlagen vermerkt, um sicherzustellen, dass alle relevanten Informationen korrekt erfasst sind.
 
-Sollten Sie weitere Fragen oder Anliegen haben, zögern Sie bitte nicht, sich an uns zu wenden. Wir sind hier, um Ihnen zu helfen.`;
+Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -207,9 +196,9 @@ document.getElementById('trockenlegungsbrief').addEventListener('click', functio
 
 vielen Dank für Ihre Nachricht.
 
-Wie gewünscht, senden wir Ihnen im Anhang den Trockenlegungsbrief.
+Wie gewünscht, finden Sie im Anhang den Trockenlegungsbrief zur weiteren Verwendung.
 
-Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung`;
+Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -221,11 +210,11 @@ document.getElementById('tw').addEventListener('click', function () {
 
 vielen Dank für Ihre Nachricht.
 
-Wie von Ihnen gewünscht, wird der Tarif zum [Datum] umgestellt.
+wie von Ihnen gewünscht, wird der Tarif zum [Datum] umgestellt.
 
-Die PDF-Rechnung wurde ebenfalls aktiviert und Sie erhalten diese ab dem nächsten Rechnungslauf in digitaler Form.
+Die PDF-Rechnung wurde ebenfalls aktiviert, und Sie werden diese ab dem nächsten Rechnungslauf in digitaler Form erhalten.
 
-Sollten Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.`;
+Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -235,9 +224,11 @@ Sollten Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.`
 document.getElementById('ummeldung_erfolgreich').addEventListener('click', function () {
 	const mailVorlage = `Guten Tag,
 
-wir möchten Ihnen mitteilen, dass wir Ihre Ummeldung wie gewünscht durchgeführt haben.
+wir möchten Ihnen hiermit bestätigen, dass Ihre Ummeldung wie gewünscht erfolgreich durchgeführt wurde.
 
-Sollten Sie noch Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.`;
+Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.
+
+Mit freundlichen Grüßen,`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -255,8 +246,6 @@ Fr: 8:00-15:00 Uhr (mit Termin bis 16:00 Uhr)
 
 Terminvereinbarung: https://www.servicetreff.at/
 
-Hinweis: Tiere (ausgenommen Assistenzhunde) sind nicht erlaubt.
-
 ##################################################################
 
 Servicepoint Erdberg:
@@ -269,8 +258,6 @@ Fr: 8:00-15:00 Uhr (mit Termin bis 16:00 Uhr)
 
 Terminvereinbarung: https://www.servicetreff.at/
 
-Hinweis: Tiere (ausgenommen Assistenzhunde) sind nicht erlaubt.
-
 ##################################################################
 
 Servicepoint Guntramsdorf:
@@ -279,9 +266,7 @@ Adresse: Rathaus Viertel 1, 1. OG, 2353 Guntramsdorf
 
 Öffnungszeiten:
 Mo-Fr: 8:00-15:00 Uhr
-Do: 8:00-17:30 Uhr
-
-Hinweis: Tiere (ausgenommen Assistenzhunde) sind nicht erlaubt.`;
+Do: 8:00-17:30 Uhr`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -345,27 +330,23 @@ Weitere Informationen und Online-Services finden Sie auf der Website der Wiener 
 // #####################################################################################################################
 
 document.getElementById('waerme_anm').addEventListener('click', function () {
-	const mailVorlage = `Sehr geehrter _kd_,
+	const mailVorlage = `Guten Tag,
 	
 vielen Dank für Ihre Nachricht.
 
-Um Ihr Anliegen bearbeitn zu können benötigen wir:
-- Kopie Kaufvertrag oder
-- Mietvertrag
+Um Ihr Anliegen bearbeiten zu können, benötigen wir von Ihnen die folgenden Unterlagen:
 
-Bitte senden Sie uns für die Anmeldung der Wärmelieferung im Zuge des Mieter- oder Eigentümerwechsels folgende Unterlagen zu:
+Für Mietwohnungen:
+Eine Bestätigung über den Beginn des Mietvertrages (unterschrieben), aus der das Datum des Mietvertragsendes, die Verbrauchsstellenadresse sowie die vollständigen Namen des Vermieters und Mieters hervorgehen.
 
-Bei Mietwohnungen:
-- Eine Bestätigung über den Beginn des Mietvertrages (unterschrieben) aus der das Datum des Mietvertragsende, die Verbrauchsstellenadresse sowie der vollständige Name des Vermieters und Mieters ersichtlich sind.
+Für Eigentumswohnungen:
+Eine Kopie des Kaufvertrages (unterschrieben), aus dem das Übergabedatum, die Verbrauchsstellenadresse sowie die vollständigen Namen des Verkäufers und Käufers ersichtlich sind.
 
-Bei Eigentumswohnungen:
-- Eine Kopie des Kaufvertrages (unterschrieben) aus dem das Übergabedatum, die Verbrauchsstellenadresse sowie die vollständigen Namen des Verkäufers und Käufers ersichtlich sind.
+Bitte senden Sie uns diese Unterlagen elektronisch als PDF-Dokument zu.
 
-Wir ersuchen Sie, diese Unterlagen elektronisch (als PDF-Dokument) zu senden.
+Für weitere Fragen zur Fernwärme wenden Sie sich bitte an folgende E-Mail-Adresse: waerme@wienenergie.at.
 
-Für weiter fragen zum Thema Fernwärme wenden Sie sich bitte an folgende Mail-Adresse: waerme@wienenergie.at.
-
-Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
+Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -373,20 +354,35 @@ Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 // #####################################################################################################################
 
 document.getElementById('data_inkasso').addEventListener('click', function () {
-	const mailVorlage = `Riverty Services Austria GmbH - Forderungsmanagement - Inkasso
+	const mailVorlage = `Guten Tag,
 
-Adresse: Gertrude-Fröhlich-Sandner-Straße 1/2, 1100 Wien
-Telefon: +43 01 503 64 90
-Mail: info.at@riverty.com
-Web: https://www.riverty.com/at/business/`;
+Vielen Dank für Ihre Nachricht.
+
+Für weitere Auskünfte zum aktuellen Saldo, wenden Sie sich bitte direkt an die Firma Riverty Services Austria GmbH.
+
+Riverty Services Austria GmbH
+Getrude-Fröhlich-Sandner-Straße 1/2
+1100 Wien
+Telefon: +43 (0)386 80 90 38
+Homepage: www.riverty.com`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
 
 // #####################################################################################################################
 
-document.getElementById('grundgerüst').addEventListener('click', function () {
-	const mailVorlage = ``;
+document.getElementById('waerme_an-/abm').addEventListener('click', function () {
+	const mailVorlage = `Guten Tag,
+
+vielen Dank für ihre Nachricht.
+ 
+wir haben Ihr Anliegen zur Kenntnis genommen und möchten Sie darüber informieren, dass wir alle An- und Abmeldungen direkt von der Hausverwaltung übermittelt bekommen.
+Wir bitten Sie daher noch um etwas Geduld.
+ 
+Die Schlussabrechnung wird bis spätestens 6 Monate nach Beendigung des Verrechnungsjahres erstellt und versendet. Bitte um Übermittelung Ihrer neuen Anschrift.
+ 
+Sollten Sie in der Zwischenzeit Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.
+`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
