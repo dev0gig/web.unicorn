@@ -45,24 +45,6 @@
     gap: 10px;
   }
 
-  .app {
-    margin-right: 10px;
-
-    background-size: cover;
-    height: 60px;
-    width: 60px;
-    border: 1px solid grey;
-    border-radius: 50%;
-    box-shadow: 0px 1px 2px #000000A0;
-
-    cursor: pointer;
-
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.2);
-    }
-  }
-
   .demo-card-wide {
     background-color: #fff;
 
@@ -187,6 +169,10 @@
             </div>
             <div class="mdl-card__supporting-text">
               <div class="group-buttons">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"
+                  onclick="window.open('http://wienenergie.sabio.de/')">
+                  iTWIIN
+                </button>
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
                   onclick="window.open('https://aufrufsystem/nova/Tickets')">
                   Ausrufsystem
@@ -200,16 +186,8 @@
                   OPCYC
                 </button>
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
-                  onclick="window.open('https://wien-energie.secova.de/module/login/#')">
-                  SAM
-                </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
                   onclick="window.open('https://intranet.wienenergie.at')">
                   Intranet
-                </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
-                  onclick="window.open('https://intranet-holding.wstw.energy-it.net/dsgvo-zustimmungserklaerung/#/zustimmung')">
-                  Datenschutz
                 </button>
               </div>
             </div>
@@ -230,13 +208,17 @@
                   onclick="window.open('https://wienenergie.4me.com/self-service')">
                   4me-Ticket
                 </button>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"
-                  onclick="window.open('http://intranet-wswdb/knowledgecenter/scXml.do?page=de.usu.infoboard%3AscInfoboard')">
-                  IWPF
-                </button>
                 <button class="mdl-button mdl-js-button mdl-button--raised"
                   onclick="window.open('http://sdetpwe:8030/DET_Admin')">
                   DET-Auftäge löschen
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  onclick="window.open('https://wien-energie.secova.de/module/login/#')">
+                  SAM
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                  onclick="window.open('https://intranet-holding.wstw.energy-it.net/dsgvo-zustimmungserklaerung/#/zustimmung')">
+                  Datenschutz
                 </button>
               </div>
             </div>
@@ -248,32 +230,15 @@
               <h2 class="mdl-card__title-text">Andere Links</h2>
             </div>
             <div class="mdl-card__supporting-text">
-              <button class="app" title="GoogleMaps" data-url="https://www.google.at/maps/preview"
-                data-img="https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA=w240-h480">
-              </button>
-              <button class="app" title="DeepL" data-url="https://www.deepl.com/de/translator"
-                data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtY2OSMHZ2in6KokfTWcVui9ormuUlW-_y-g&s">
-              </button>
-              <button class="app" title="MA40"
-                data-url="https://mein.wien.gv.at/formularserver-mw/user/formular.aspx?path=(mw%2fstandard)&pid=06a2e3ecbb6b4302b4f134a505de83b8&pn=B907a1748c4e94b018a206b9eecbad4e1&data=%3cah%3e0%3c%2fah%3e">MA40</button>
+              <div class="oneline-buttons">
+                <button class="mdl-button mdl-js-button mdl-button--raised" title="GoogleMaps"
+                  data-url="https://www.google.at/maps/preview">Maps</button>
+                <button class="mdl-button mdl-js-button mdl-button--raised" title="DeepL"
+                  data-url="https://www.deepl.com/de/translator">DeepL</button>
+                <button class="mdl-button mdl-js-button mdl-button--raised" title="MA40"
+                  data-url="https://mein.wien.gv.at/formularserver-mw/user/formular.aspx?path=(mw%2fstandard)&pid=06a2e3ecbb6b4302b4f134a505de83b8&pn=B907a1748c4e94b018a206b9eecbad4e1&data=%3cah%3e0%3c%2fah%3e">MA40</button>
+              </div>
             </div>
-
-            <script>
-              const buttons = document.querySelectorAll(".app");
-              // url
-              buttons.forEach((button) => {
-                button.addEventListener("click", () => {
-                  const url = button.dataset.url;
-                  window.open(url, '_blank');
-                });
-                // img
-                buttons.forEach(function (button) {
-                  const imgURL = button.dataset.img;
-                  button.style.backgroundImage = `url(${imgURL})`;
-                });
-              });
-            </script>
-
           </div>
 
 
@@ -467,7 +432,7 @@
                       id="verlassenschaft">Verlassenschaft</button>
                     <button class="mdl-button mdl-js-button mdl-button--raised" id="tw">Tarifwechsel</button>
                     <button class="mdl-button mdl-js-button mdl-button--raised"
-                      id="trockenlegungsbrief">Trockenlegungsbrief</button>
+                      id="trockenlegungsbrief">Trockenlegungbrief</button>
                     <button class="mdl-button mdl-js-button mdl-button--raised" id="ummeldung_erfolgreich">Ummeldung
                       erfolgreich</button>
                   </div>
@@ -781,7 +746,7 @@
         </div>
       </section>
 
-      <section class="mdl-layout__tab-panel is-active" id="scroll-tab-5">
+      <section class="mdl-layout__tab-panel" id="scroll-tab-5">
         <div class="page-content">
 
           <div class="demo-card-wide mdl-card mdl-shadow--2dp">
