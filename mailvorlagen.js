@@ -390,7 +390,8 @@ Sollten Sie in der Zwischenzeit Fragen haben, zögern Sie bitte nicht, uns zu ko
 // #####################################################################################################################
 
 document.getElementById('waerme_mieterwechsel').addEventListener('click', function () {
-	const mailVorlage = `Guten Tag, 
+	const mailVorlage = `Guten Tag,
+ 
 der Mieterwechsel wurde wunschgemäß durchgeführt.
  
 Zu Ihrer Information:
