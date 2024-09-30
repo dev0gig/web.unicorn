@@ -393,8 +393,24 @@ Sollten Sie in der Zwischenzeit Fragen haben, zögern Sie bitte nicht, uns zu ko
 
 // #####################################################################################################################
 
-document.getElementById('grundgerüst').addEventListener('click', function () {
-	const mailVorlage = ``;
+document.getElementById('waerme_mieterwechsel').addEventListener('click', function () {
+	const mailVorlage = `Guten Tag,
+ 
+der Mieterwechsel wurde wunschgemäß durchgeführt.
+ 
+Zu Ihrer Information:
+Aufgrund von gesetzlichen Vorgaben dürfen wir keine direkten Verträge mit Ihren Mieter*innen abschließen – im Sinne des HeizKG ist das nur mit Ihnen als Eigentümer*in möglich. 
+Wichtig: Damit bleiben Sie auch in Zukunft unser(e) Vertragspartner*in und haften für anfallende Kosten.
+Um Ihnen die Abwicklung so einfach wie möglich zu machen, bieten wir Ihnen ein besonderes Service: Wir tragen den/die Mieter*in als Rechnungsempfänger*in ein und schicken diesem/r alle Rechnungsunterlagen.
+ 
+Sie möchten dieses Service nicht nutzen? Dann informieren Sie uns bitte unter waerme@wienenergie.at
+ 
+Sie haben noch Fragen? Wir sind für Sie da – unter 0800 500 700 von Montag bis Freitag von
+07:30 bis 16:00 Uhr oder unter waerme@wienenergie.at
+ 
+Mit freundlichen Grüßen
+ 
+Wien Energie`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
