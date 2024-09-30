@@ -73,7 +73,9 @@ Sollten Sie noch Fragen haben, stehen wir Ihnen selbstverständlich gerne zur Ve
 // #####################################################################################################################
 
 document.getElementById('gh_auszahlung_ausweis_fehlt').addEventListener('click', function () {
-	const mailVorlage = `Vielen Dank für Ihre Anfrage.
+	const mailVorlage = `Guten Tag,
+	
+Vielen Dank für Ihre Anfrage.
 
 Um Ihre Bankverbindung zu hinterlegen und Ihr Guthaben auszuzahlen, benötigen wir zur Authentifizierung eine Ausweiskopie. Dies dient ausschließlich der Betrugsprävention und gewährleistet die Sicherheit Ihrer Auszahlung. Die von Ihnen beigefügte Ausweiskopie wird nicht in unserem System gespeichert, sondern dient ausschließlich Ihrer Identifikation und wird nach dem Datenabgleich unwiderruflich gelöscht.
 
@@ -85,7 +87,9 @@ Wenn Sie keine Ausweiskopie per E-Mail senden möchten, können Sie Ihren Auswei
 // #####################################################################################################################
 
 document.getElementById('gh_auszahlung').addEventListener('click', function () {
-	const mailVorlage = `Vielen Dank für Ihre Anfrage.
+	const mailVorlage = `Guten Tag,
+
+Vielen Dank für Ihre Anfrage.
 
 Die Authentifizierung mittels Ihrer Ausweiskopie wurde erfolgreich durchgeführt. Die von Ihnen beigefügte Ausweiskopie wurde nicht in unserem System gespeichert, sondern diente ausschließlich Ihrer Identifikation und wurde nach dem Abgleich Ihrer Daten unwiderruflich gelöscht.
 
