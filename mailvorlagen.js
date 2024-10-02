@@ -123,9 +123,7 @@ vielen Dank für Ihre Nachricht.
 gerne haben wir den gewünschten Ratenplan für Sie erstellt.
 Bitte beachten Sie, dass die Raten pünktlich an den im Plan angegebenen Terminen überwiesen werden müssen. Achten Sie darauf, den exakten Betrag zu überweisen, da der Ratenplan ansonsten storniert wird.
 
-Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.
-
-Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
+Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
