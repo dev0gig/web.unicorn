@@ -77,9 +77,11 @@ document.getElementById('gh_auszahlung_ausweis_fehlt').addEventListener('click',
 	
 Vielen Dank für Ihre Anfrage.
 
-Um Ihre Bankverbindung zu hinterlegen und Ihr Guthaben auszuzahlen, benötigen wir zur Authentifizierung eine Ausweiskopie. Dies dient ausschließlich der Betrugsprävention und gewährleistet die Sicherheit Ihrer Auszahlung. Die von Ihnen beigefügte Ausweiskopie wird nicht in unserem System gespeichert, sondern dient ausschließlich Ihrer Identifikation und wird nach dem Datenabgleich gelöscht.
+Für die Auszahlung von Guthaben ist eine Authentifizierung mittels Ausweiskopie erforderlich.
 
-Wenn Sie keine Ausweiskopie per E-Mail senden möchten, können Sie Ihren Ausweis auch in einem unserer Servicecenter vorweisen.`;
+Dies dient ausschließlich der Betrugsprävention und der Sicherheit Ihrer Auszahlung. Ihre Ausweiskopie wird nicht in Ihrem Kundendatensatz gespeichert und ausschließlich Ihrer Identifikation.
+
+Wenn Sie keine Ausweiskopie per Mail senden möchten, können Sie Ihren Ausweis auch in einem unserer Servicecenter vorweisen.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
@@ -91,7 +93,9 @@ document.getElementById('gh_auszahlung').addEventListener('click', function () {
 
 Vielen Dank für Ihre Anfrage.
 
-Die Authentifizierung mittels Ihrer Ausweiskopie wurde erfolgreich durchgeführt. Die von Ihnen beigefügte Ausweiskopie wurde nicht in unserem System gespeichert, sondern diente ausschließlich Ihrer Identifikation und wurde nach dem Abgleich Ihrer Daten gelöscht.
+Die Authentifizierung mittels Ihrer Ausweiskopie wurde erfolgreich durchgeführt.
+
+Die von Ihnen beigefügte Ausweiskopie wird nicht in Ihrem Kundendatensatz gespeichert, sondern diente ausschließlich Ihrer Identifikation.
 
 Ihre Gutschrift erhalten Sie innerhalb der nächsten Werktage auf Ihr angegebenes Bankkonto überwiesen.`;
 
