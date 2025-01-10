@@ -104,6 +104,20 @@ Ihre Gutschrift erhalten Sie innerhalb der nächsten Werktage auf Ihr angegebene
 
 // #####################################################################################################################
 
+document.getElementById('gh_allgemein').addEventListener('click', function () {
+	const mailVorlage = `Guten Tag,
+
+Vielen Dank für Ihre Anfrage.
+
+Um Ihre Bankverbindung zu hinterlegen und Ihr Guthaben auszuzahlen, benötigen wir zur Authentifizierung eine Ausweiskopie. Dies dient ausschließlich der Betrugsprävention und gewährleistet die Sicherheit Ihrer Auszahlung.
+Die von Ihnen beigefügte Ausweiskopie wird nicht in Ihrem Kundendatensatz gespeichert, sondern dient ausschließlich Ihrer Identifikation.
+Wenn Sie keine Ausweiskopie per E-Mail senden möchten, können Sie Ihren Ausweis auch in einem unserer Servicecenter vorweisen.`;
+
+	document.getElementById('outputArea').value = mailVorlage;
+});
+
+// #####################################################################################################################
+
 document.getElementById('kdnr_benötigt').addEventListener('click', function () {
 	const mailVorlage = `Guten Tag,
 
