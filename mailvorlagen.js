@@ -110,7 +110,9 @@ document.getElementById('gh_allgemein').addEventListener('click', function () {
 Vielen Dank für Ihre Anfrage.
 
 Um Ihre Bankverbindung zu hinterlegen und Ihr Guthaben auszuzahlen, benötigen wir zur Authentifizierung eine Ausweiskopie. Dies dient ausschließlich der Betrugsprävention und gewährleistet die Sicherheit Ihrer Auszahlung.
+
 Die von Ihnen beigefügte Ausweiskopie wird nicht in Ihrem Kundendatensatz gespeichert, sondern dient ausschließlich Ihrer Identifikation.
+
 Wenn Sie keine Ausweiskopie per E-Mail senden möchten, können Sie Ihren Ausweis auch in einem unserer Servicecenter vorweisen.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
