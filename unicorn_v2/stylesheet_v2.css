@@ -13,13 +13,14 @@ body {
 
 #myDiv {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 30%;
+    left: 50%;
     width: 200px;
     height: 100px;
-    background-color: lightgray;
-    border: 1px solid black;
-    padding: 10px;
+    padding: 25px;
+    box-shadow: 0px 10px 50px #CCCCCC;
+    background-color: white;
+    border-radius: 15px;
 }
 
 /* HEADER */
