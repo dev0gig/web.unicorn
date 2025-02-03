@@ -6,6 +6,22 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* floating DIV */
+.hidden {
+    display: none;
+}
+
+#myDiv {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+}
+
 /* HEADER */
 
 .header-box {
