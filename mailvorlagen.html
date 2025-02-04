@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Unicorn</title>
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4313/4313394.png" />
+
+	<!-- getmdl.io -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-red.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+</head>
+
+<style>
+	.mdl-layout__content {
+		background-color: #ddd;
+	}
+
+	.mdl-layout__drawer {
+		overflow: hidden;
+	}
+
+	.page-content {
+		padding: 30px;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		gap: 20px;
+	}
+
+	.group-buttons {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+	}
+
+	.oneline-buttons {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+
+	.demo-card-wide {
+		background-color: #fff;
+
+		border: 1px solid gray;
+		border-radius: 10px;
+		box-shadow: 0px 3px 5px #00000050;
+
+		display: flex;
+		flex: 400px;
+		align-items: center;
+	}
+
+	textarea {
+		border: 1px solid gray;
+		border-radius: 5px;
+		box-shadow: 0px 3px 5px #00000050;
+	}
+</style>
+
+<body>
+	<!-- Simple header with scrollable tabs. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+		</div>
+		<main class="mdl-layout__content">
+
+			<section class="mdl-layout__tab-panel" id="scroll-tab-1">
+
+				<div class="page-content">
+					<style>
+						.mail_grid {
+							display: grid;
+							grid-template-columns: 1fr 1fr;
+							width: 100%;
+							gap: 20px;
+						}
+
+						.mail_button_flex {
+							display: flex;
+							flex-wrap: wrap;
+							gap: 20px;
+						}
+
+						textarea {
+							font-family: Arial, Helvetica, sans-serif;
+						}
+					</style>
+					<div class="mail_grid">
+						<div class="mail_button_flex">
+
+							<!-- Kontaktdaten -->
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Kontaktdaten</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									<div class="group-buttons">
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="data_spit">Spittelau</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="data_wn">WienerNetze</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="data_KS_allgemein">contact_data</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="data_inkasso">Inkassobüro</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Grundaufbau -->
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Grundgerüst</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									<div class="oneline-buttons">
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="grundgeruest">Grundgerüst</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="tois_vorlage">Tois-Vorlage</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Strom & Gas -->
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Strom & Gas</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									<div class="group-buttons">
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="anmeldung">Anmeldung</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="abmeldung">Abmeldung</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="kdnr_benötigt">Kundennummer
+											benötigt</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="rp">Ratenplan</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="rechnungskorrektur_zählerstände">Rechnungskorrektur &
+											Zählerstände</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="sonnenstrom">Sonnenstrom</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="verlassenschaft">Verlassenschaft</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="tw">Tarifwechsel</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="trockenlegungsbrief">Trockenlegungbrief</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="ummeldung_erfolgreich">Ummeldung
+											erfolgreich</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Guthaben -->
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Guthaben</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									<div class="oneline-buttons">
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="gh_auszahlung_ausweis_fehlt">ID
+											fehlt</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="gh_auszahlung">GH
+											Auszahlung</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="gh_allgemein">Allgemeines Wording</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- Wärme -->
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title">
+									<h2 class="mdl-card__title-text">Wärme</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									<div class="group-buttons">
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="waerme_anm">Anmeldung</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="waerme_an-/abm">An-/Abmeldung</button>
+										<button class="mdl-button mdl-js-button mdl-button--raised"
+											id="waerme_mieterwechsel">Mieterwechsel</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<textarea id="outputArea" placeholder="Hier steht die Vorlage..."></textarea>
+
+					</div>
+				</div>
+				<script src="mailvorlagen.js"></script>
+			</section>
+		</main>
+</body>
+
+</html>
