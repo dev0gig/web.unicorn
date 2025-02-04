@@ -21,8 +21,6 @@ body {
     background-color: white;
     border-radius: 15px;
     border: 4px solid #005797;
-    
-    transition: opacity 0.3s ease-in-out;
 
     img{
         width: auto;
