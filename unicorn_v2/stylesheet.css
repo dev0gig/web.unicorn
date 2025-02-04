@@ -93,7 +93,7 @@ h1 {
 }
 
 .main-container {
-    margin: 50px 100px;
+    margin: 30px 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
