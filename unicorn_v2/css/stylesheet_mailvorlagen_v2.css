@@ -105,10 +105,13 @@ body {
 
 textarea {
     margin: 20px;
-    padding: 10px;
+    padding: 15px; /* Increased padding for better readability */
     position: sticky;
     top: 20px;
-    height: 70%;
+    height: 80%; /* Increased height */
     width: 90%;
     border-radius: 15px;
+    font-family: 'Arial', serif; /* Changed font to Georgia */
+    font-size: 16px; /* Increased font size */
+    line-height: 1.5; /* Improved line height for readability */
 }
