@@ -99,7 +99,7 @@ h1 {
 }
 
 .main-container-box {
-    flex: 1;
+    flex: 1 300px;
     padding: 25px;
     box-shadow: 0px 10px 50px #CCCCCC;
     border-radius: 15px;
