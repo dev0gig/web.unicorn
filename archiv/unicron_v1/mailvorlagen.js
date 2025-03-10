@@ -424,71 +424,59 @@ Um Ihnen die Abwicklung so einfach wie möglich zu machen, bieten wir Ihnen ein 
 Sie möchten dieses Service nicht nutzen? Dann informieren Sie uns bitte unter waerme@wienenergie.at
  
 Sie haben noch Fragen? Wir sind für Sie da – unter 0800 500 700 von Montag bis Freitag von
-07:30 bis 16:00 Uhr oder unter waerme@wienenergie.at
+07:30 bis 16:00 Uhr oder unter waerme@wienenergie.at`;
+
+	document.getElementById('outputArea').value = mailVorlage;
+});
+
+// #####################################################################################################################
+
+document.getElementById('anm_pv').addEventListener('click', function () {
+	const mailVorlage = `Guten Tag,
+
+vielen Dank für Ihre Nachricht.
  
-Mit freundlichen Grüßen
+Gerne haben wir die Anmeldung, für Ihre PV-Anlage angestoßen.
+
+Bitte wenden Sie sich nun, an die Wiener Netze, für die weiteren Schritte, wie die Plombierung der Anlage.
+info@wienernetze.at
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
+
+	document.getElementById('outputArea').value = mailVorlage;
+});
+
+// #####################################################################################################################
+
+document.getElementById('heizkostenabrechnung').addEventListener('click', function () {
+	const mailVorlage = `Guten Tag,
+
+vielen Dank für Ihre Nachricht.
  
-Wien Energie`;
+Bei einer Heizkostenabrechnung handelt es sich um ein spezielles Aufteilungsverfahren basierend auf dem Heizkostenabrechnungsgesetz.
+ 
+Bei diesem Verfahren kann der Einheitenpreis pro Teilstrich erst nach Vorliegen sämtlicher Daten und Werte am Ende des Verrechnungsjahres genau berechnet werden.
+ 
+Aufgrund dieses Spezifikums kann auch eine endgültige Schlussabrechnung erst nach Beendigung eines Verrechnungsjahres gelegt werden. 
+ 
+Wir bitten diesbezüglich um etwas Geduld.
+ 
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
 
 // #####################################################################################################################
 
-document.getElementById('grundgerüst').addEventListener('click', function () {
-	const mailVorlage = ``;
+document.getElementById('mw_untermieter').addEventListener('click', function () {
+	const mailVorlage = `Sehr geehrte Kundin, sehr geehrter Kunde! 
+ 
+Wir nehmen zur Kenntnis, dass Sie oben genanntes Nutzungsobjekt ab XXX an HXXXXXX vermietet haben und ab diesem Datum die Rechnungslegung an Ihren Mieter erfolgt. Über eventuelle Zahlungsrückstände werden Sie schriftlich informiert.
+ 
+Ausdrücklich weisen wir jedoch darauf hin, dass Sie als Wohnungseigentümer uns gegenüber Wärmeabnehmer und Vertragspartner für oben genanntes Nutzungsobjekt bleiben. Es erfolgt somit kein Vertragsversand an Ihren Mieter.
+Bezüglich der Zwischenablesung ersuchen wir Sie, mit der Firma TXXXX unter der Rufnummer XXXX eine Terminvereinbarung zu treffen oder die Fotos der Zählerstände per Mail an xxxxxx zu senden. 
+ 
+Freundliche Grüße und danke für Ihr Vertrauen.`;
 
 	document.getElementById('outputArea').value = mailVorlage;
 });
-
-// #####################################################################################################################
-
-document.getElementById('grundgerüst').addEventListener('click', function () {
-	const mailVorlage = ``;
-
-	document.getElementById('outputArea').value = mailVorlage;
-});
-
-// #####################################################################################################################
-
-document.getElementById('grundgerüst').addEventListener('click', function () {
-	const mailVorlage = ``;
-
-	document.getElementById('outputArea').value = mailVorlage;
-});
-
-
-
-
-document.getElementById('searchButton').addEventListener('click', function () {
-	const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-	const results = [];
-
-	for (const [key, value] of Object.entries(templates)) {
-		if (value.toLowerCase().includes(searchTerm)) {
-			results.push({ key, value });
-		}
-	}
-
-	displayResults(results);
-});
-
-function displayResults(results) {
-	const resultsDiv = document.getElementById('searchResults');
-	resultsDiv.innerHTML = '';
-
-	if (results.length === 0) {
-		resultsDiv.innerHTML = 'Keine Vorlagen gefunden.';
-		return;
-	}
-
-	results.forEach(result => {
-		const resultButton = document.createElement('button');
-		resultButton.textContent = result.key;
-		resultButton.addEventListener('click', function () {
-			document.getElementById('outputArea').value = result.value;
-		});
-
-		resultsDiv.appendChild(resultButton);
-	});
-}
