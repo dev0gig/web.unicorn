@@ -99,7 +99,7 @@ h1 {
 }
 
 .main-container-box {
-    flex: 1 300px;
+    flex: 1;
     padding: 25px;
     box-shadow: 0px 10px 50px #CCCCCC;
     border-radius: 15px;
@@ -107,6 +107,7 @@ h1 {
 
 .system-button {
     height: 50px;
+    width: 300px;
 
     border: 2px solid #EB6626;
     border-radius: 50px;
