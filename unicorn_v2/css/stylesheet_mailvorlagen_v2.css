@@ -13,7 +13,7 @@ body {
     height: 80px;
 
     background-color: #F39335;
-    background-image: url('wave.png');
+    background-image: url('../assets/wave.png');
     background-size: cover;
     background-position: center;
 
