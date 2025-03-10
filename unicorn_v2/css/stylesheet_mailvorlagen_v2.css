@@ -59,7 +59,6 @@ body {
 
 .header-label-text {
     color: white;
-    padding: 0px 10px;
 }
 
 .section-main {
@@ -67,8 +66,14 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.section-main-mails{
+    display: flex;
+    flex-direction: column;
+}
+
 .section-main-mails-box {
     flex: 1;
+    margin: 10px 30px;
     padding: 25px;
     box-shadow: 0px 10px 50px #CCCCCC;
     border-radius: 15px;
@@ -76,13 +81,12 @@ body {
 
 .button-group {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
 .mail-button {
-    height: 50px;
-    width: 160px;
+    min-height: 50px;
 
     border: 2px solid #EB6626;
     border-radius: 50px;
@@ -90,13 +94,26 @@ body {
     color: #EB6626;
     font-weight: bold;
 
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.1s ease;
 
     &:hover {
         background-color: #A73B00;
         border: 2px solid #A73B00;
         color: white;
         cursor: pointer;
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
+}
+
+textarea{
+    margin: 20px;
+    padding: 10px;
+
+    position: sticky;
+    top: 20px;
+
+    height: 50%;
+    width: 90%;
+
+    border-radius: 15px;
 }
