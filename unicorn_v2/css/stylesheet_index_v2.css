@@ -20,7 +20,7 @@ body {
     border-radius: 15px;
     border: 4px solid #005797;
 
-    img{
+    img {
         width: auto;
     }
 }
@@ -55,12 +55,12 @@ body {
     color: white;
 }
 
-.header-link{
+.header-link {
     color: white;
     margin-left: 15px;
     text-decoration: none;
 
-    &:hover{
+    &:hover {
         border-bottom: 3px solid white;
         cursor: pointer;
     }
@@ -123,6 +123,27 @@ h1 {
         color: white;
         cursor: pointer;
         transform: scale(1.02);
+    }
+}
+
+.spacer {
+    height: 50px;
+}
+
+.important-button {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    font-size: 18px;
+    /* Slightly larger font size */
+    font-weight: bold;
+    border: 2px solid var(--highlight-color);
+
+    &:hover {
+        background-color: var(--hover-color);
+        border-color: var(--hover-color);
+        color: var(--text-color);
+        transform: scale(1.1);
+        /* Slightly larger scale on hover */
     }
 }
 
