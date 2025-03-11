@@ -137,13 +137,19 @@ Sobald wir die Unterlagen erhalten haben, werden wir die Anmeldung für Sonnenst
 
 Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 
-	verlassenschaft: `Guten Tag,
+	verlassenschaft: `Guten Tag, 
+ 
+Vielen Dank für die Übermittlung der Sterbeurkunde. 
+ 
+In Ihrem Fall gibt es mehrere Verfahrensweisen: 
+ 
+1.) Ummeldung: Sie oder jemand anders meldet sich auf die Adresse neu an. Dafür benötigen wir den vollständigen Namen, das Geburtsdatum, die Telefonnummer, Mail-Adresse und die Rechnungsadresse des Nachfolgers. 
 
-wir möchten Ihnen unser aufrichtiges Beileid aussprechen und bedauern zutiefst, von Ihrem Verlust zu erfahren.
+2.) Abweichender Rechnungsempfänger: Sollte der Vertragseintritt gewünscht sein, hinterlegen wir Sie oder jemand anders als Rechnungsempfänger, solange der Beschluss noch nicht erstellt wurde. 
 
-Wir haben das Sterbedatum in unseren Unterlagen vermerkt, um sicherzustellen, dass alle relevanten Informationen korrekt erfasst sind.
+3.) Abmeldung: Wir kündigen den Vertrag (maximal 3 Monate in der Zukunft).
 
-Für Rückfragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.`,
+Bitte um kurze Info für welche dieser 3 Möglichkeiten Sie sich entscheiden.`,
 
 	trockenlegungsbrief: `Guten Tag,
 
@@ -332,7 +338,18 @@ Wir nehmen zur Kenntnis, dass Sie oben genanntes Nutzungsobjekt ab XXX an HXXXXX
 Ausdrücklich weisen wir jedoch darauf hin, dass Sie als Wohnungseigentümer uns gegenüber Wärmeabnehmer und Vertragspartner für oben genanntes Nutzungsobjekt bleiben. Es erfolgt somit kein Vertragsversand an Ihren Mieter.
 Bezüglich der Zwischenablesung ersuchen wir Sie, mit der Firma TXXXX unter der Rufnummer XXXX eine Terminvereinbarung zu treffen oder die Fotos der Zählerstände per Mail an xxxxxx zu senden. 
  
-Freundliche Grüße und danke für Ihr Vertrauen.`
+Freundliche Grüße und danke für Ihr Vertrauen.`,
+
+
+
+
+
+
+
+
+
+
+	nix: `ist nix, wieso klickst du mich dann an....`,
 };
 
 // Schleife zum Hinzufügen der Event-Listener
