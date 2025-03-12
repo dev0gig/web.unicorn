@@ -67,6 +67,10 @@ body {
     padding: 0px 10px;
 }
 
+.header-box-label{
+    color: white;
+}
+
 /* MAIN */
 h1 {
     margin-left: 130px;

@@ -65,6 +65,10 @@ body {
     margin: 0;
 }
 
+.header-box-label{
+    color: var(--text-color);
+}
+
 .section-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
