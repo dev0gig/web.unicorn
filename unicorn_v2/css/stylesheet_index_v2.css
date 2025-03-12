@@ -67,7 +67,11 @@ body {
     padding: 0px 10px;
 }
 
-.header-box-label{
+.header-box-label {
+    color: white;
+}
+
+a {
     color: white;
 }
 

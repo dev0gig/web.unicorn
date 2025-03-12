@@ -32,7 +32,8 @@ body {
     line-height: 80px;
 }
 
-.header-left, .header-right {
+.header-left,
+.header-right {
     padding: 0 130px;
     font-size: 16pt;
     color: var(--text-color);
@@ -65,8 +66,12 @@ body {
     margin: 0;
 }
 
-.header-box-label{
+.header-box-label {
     color: var(--text-color);
+}
+
+a {
+    color: white;
 }
 
 .section-main {
@@ -81,7 +86,8 @@ body {
 
 .section-main-mails-box {
     flex: 1;
-    margin: 20px 30px; /* Increased margin to avoid shadow overlap */
+    margin: 20px 30px;
+    /* Increased margin to avoid shadow overlap */
     padding: 25px;
     box-shadow: 0 5px 20px var(--box-shadow-color);
     border-radius: 15px;
@@ -112,18 +118,29 @@ body {
 
 textarea {
     margin: 20px;
-    padding: 20px; /* Increased padding for better readability */
+    padding: 20px;
+    /* Increased padding for better readability */
     position: sticky;
     top: 20px;
-    height: 60%; /* Increased height */
+    height: 60%;
+    /* Increased height */
     width: 90%;
-    border-radius: 10px; /* Rounded corners */
-    border: 2px solid var(--sepia-border-color); /* Border color */
-    background-color: var(--sepia-background-color); /* Background color */
-    color: var(--sepia-text-color); /* Text color */
-    font-family: 'Georgia', serif; /* Changed font to Georgia */
-    font-size: 18px; /* Increased font size */
-    line-height: 1.6; /* Improved line height for readability */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    resize: none; /* Disable resizing */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: 2px solid var(--sepia-border-color);
+    /* Border color */
+    background-color: var(--sepia-background-color);
+    /* Background color */
+    color: var(--sepia-text-color);
+    /* Text color */
+    font-family: 'Georgia', serif;
+    /* Changed font to Georgia */
+    font-size: 18px;
+    /* Increased font size */
+    line-height: 1.6;
+    /* Improved line height for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    resize: none;
+    /* Disable resizing */
 }
