@@ -358,3 +358,9 @@ Object.keys(mailVorlagen).forEach(id => {
 		setMailVorlage(mailVorlagen[id]);
 	});
 });
+
+const textArea = document.getElementById('outputArea');
+
+textArea.addEventListener('click', function() {
+  this.select();
+});
