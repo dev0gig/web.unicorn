@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mailvorlagen</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7285/7285521.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="main">
+            <div class="main-buttons">
+
+                <!-- Strom & Gas -->
+                <details class="main-box" open>
+                    <summary>Strom & Gas</summary>
+                    <div class="mdl-card__supporting-text">
+                        <div class="button-group">
+                            <button class="mail-button" id="anmeldung">Anmeldung</button>
+                            <button class="mail-button" id="abmeldung">Abmeldung</button>
+                            <button class="mail-button" id="kdnr_benötigt">Kundennummer benötigt</button>
+                            <button class="mail-button" id="rp">Ratenplan</button>
+                            <button class="mail-button" id="rechnungskorrektur_zählerstände">Rechnungskorrektur &
+                                Zählerstände</button>
+                            <button class="mail-button" id="sonnenstrom">Sonnenstrom</button>
+                            <button class="mail-button" id="verlassenschaft">Verlassenschaft</button>
+                            <button class="mail-button" id="tw">Tarifwechsel</button>
+                            <button class="mail-button" id="trockenlegungsbrief">Trockenlegungbrief</button>
+                            <button class="mail-button" id="ummeldung_erfolgreich">Ummeldung erfolgreich</button>
+                            <button class="mail-button" id="anm_pv">ANM PV</button>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Guthaben -->
+                <details class="main-box" open>
+                    <summary>Guthaben</summary>
+                    <div class="mdl-card__supporting-text">
+                        <div class="button-group">
+                            <button class="mail-button" id="gh_auszahlung_ausweis_fehlt">ID fehlt</button>
+                            <button class="mail-button" id="gh_auszahlung">GH Auszahlung</button>
+                            <button class="mail-button" id="gh_allgemein">Allgemeines Wording</button>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Grundaufbau -->
+                <details class="main-box" open>
+                    <summary>Grundgerüst</summary>
+                    <div class="mdl-card__supporting-text">
+                        <div class="button-group">
+                            <button class="mail-button" id="grundgeruest">Grundgerüst</button>
+                            <button class="mail-button" id="tois_vorlage">Tois-Vorlage</button>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Wärme -->
+                <details class="main-box" open>
+                    <summary>Wärme</summary>
+                    <div class="mdl-card__supporting-text">
+                        <div class="button-group">
+                            <button class="mail-button" id="waerme_anm">Anmeldung</button>
+                            <button class="mail-button" id="waerme_an_abm">An-/Abmeldung</button>
+                            <button class="mail-button" id="waerme_mieterwechsel">Mieterwechsel</button>
+                            <button class="mail-button" id="heizkostenabrechnung">Heizkostenabrechnung</button>
+                            <button class="mail-button" id="mw_untermieter">Mieterwechsel Untermieter</button>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- WienerNetze -->
+                <details class="main-box">
+                    <summary>Wiener Netze</summary>
+                    <div class="mdl-card__supporting-text">
+                        <div class="button-group">
+                            <button class="mail-button" id="nix">noch nix</button>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Kontaktdaten -->
+                <details class="main-box">
+                    <summary>Kontaktdaten</summary>
+                    <div class="mdl-card__supporting-text">
+                        <div class="button-group">
+                            <button class="mail-button" id="data_spit">Spittelau</button>
+                            <button class="mail-button" id="data_wn">WienerNetze</button>
+                            <button class="mail-button" id="data_KS_allgemein">contact_data</button>
+                            <button class="mail-button" id="data_inkasso">Inkassobüro</button>
+                        </div>
+                    </div>
+                </details>
+
+            </div>
+
+            <div class="main-textarea">
+                <textarea id="outputArea" placeholder="Mailvorlage"></textarea>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+
+    </main>
+</body>
+
+</html>
