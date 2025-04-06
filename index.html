@@ -6,44 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unicorn Version?</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4313/4313394.png" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar {
+            width: 250px;
+            background-color: #333;
+            color: #f0f0f0;
+            height: 100vh;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar h2 {
+            color: #ffa500;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            display: block;
+            color: #f0f0f0;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ffa500;
+            color: #1c1c1c;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffa500;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        a.button {
+            text-decoration: none;
+            color: #1c1c1c;
+            background-color: #ffa500;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        a.button:hover {
+            background-color: #ff8c00;
+            transform: scale(1.1);
+        }
+
+        .strikethrough {
+            text-decoration: line-through;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f8ff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        background-color: #ff69b4;
-        padding: 10px 20px;
-        border-radius: 5px;
-        margin: 0 10px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    a:hover {
-        background-color: #ff1493;
-        transform: scale(1.1);
-    }
-
-    .strikethrough {
-        text-decoration: line-through;
-        pointer-events: none;
-        opacity: 0.6;
-    }
-</style>
-
 <body>
-    <a href="unicron_v1/index.html">Unicorn V1</a>
-    <a href="unicorn_v2/html/index_v2.html" class="strikethrough">Unicorn V2</a>
+    <div class="navbar">
+        <h2>Wiener Stadtwerke</h2>
+        <a href="https://www.wienerstadtwerke.at" target="_blank">Hauptseite</a>
+        <a href="https://www.wienenergie.at" target="_blank">Wien Energie</a>
+        <a href="https://www.wienerlinien.at" target="_blank">Wiener Linien</a>
+        <a href="https://www.bestattungwien.at" target="_blank">Bestattung Wien</a>
+        <a href="https://www.friedhoefewien.at" target="_blank">Friedhöfe Wien</a>
+    </div>
+    <div class="content">
+        <h1>Willkommen bei Unicorn</h1>
+        <div class="button-container">
+            <a href="unicron_v1/index.html" class="button">Unicorn V1</a>
+            <a href="unicorn_v2/html/index_v2.html" class="button strikethrough">Unicorn V2</a>
+        </div>
+        <footer>© 2025 - NGIPAV</footer>
+    </div>
 </body>
 
 </html>
