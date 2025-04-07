@@ -117,34 +117,6 @@ h1 {
     gap: 10px;
 }
 
-/* Schwebender Button */
-.floating-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ffa500;
-    color: #1c1c1c;
-    padding: 10px 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-}
-
-.floating-button select {
-    background-color: #333;
-    color: #f0f0f0;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.floating-button select:hover {
-    background-color: #ffa500;
-    color: #1c1c1c;
-}
-
 /* FOOTER */
 .footer-box {
     height: 80px;
