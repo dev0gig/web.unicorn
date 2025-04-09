@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="header-box-label">
-            <a href="../mail-template/mail-template.html">zu Mailvorlagen</a>
+            <a href="mail-template.html">zu Mailvorlagen</a>
         </div>
     </header>
     <main>
@@ -218,43 +218,17 @@
 
 </body>
 
+<!-- ##################################################################################################################### -->
 <div class="floating-button">
     <select id="theme-selector" onchange="changeTheme()">
-#####################################################################################################################
-        <option value="design/style-dark.css">Dark Mode</option>
-        <option value="design/style-light.css">Light Mode</option>
-        <option value="design/windows98.css">old windows Mode</option>
+        <option value="design/style-dark.css">dark</option>
+        <option value="design/style-light.css">light</option>
+        <option value="design/windows98.css">windows98</option>
 
-#####################################################################################################################
     </select>
 </div>
+<!-- /##################################################################################################################### -->
 
-<script>
-    // Funktion zum Ändern des Themes
-    function changeTheme() {
-        const themeSelector = document.getElementById('theme-selector');
-        const selectedTheme = themeSelector.value;
-
-        // CSS-Datei ändern
-        document.querySelector('link[rel="stylesheet"]').href = selectedTheme;
-
-        // Auswahl im Local Storage speichern
-        localStorage.setItem('selectedTheme', selectedTheme);
-    }
-
-    // Beim Laden der Seite die gespeicherte Auswahl anwenden
-    window.onload = function () {
-        const savedTheme = localStorage.getItem('selectedTheme');
-        const themeSelector = document.getElementById('theme-selector');
-
-        if (savedTheme) {
-            // Gespeichertes Theme anwenden
-            document.querySelector('link[rel="stylesheet"]').href = savedTheme;
-
-            // Dropdown auf die gespeicherte Auswahl setzen
-            themeSelector.value = savedTheme;
-        }
-    };
-</script>
+<script src="changeTheme.js"></script>
 
 </html>
