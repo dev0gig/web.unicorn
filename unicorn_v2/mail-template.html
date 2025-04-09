@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mailvorlagen</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7285/7285521.png" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design/style-dark.css">
     <link rel="stylesheet" href="float-button.css">
 
 </head>
@@ -14,100 +14,87 @@
 <body>
 
     <main>
-        <section class="main">
-            <div class="main-buttons">
+        <section class="mail-main">
 
-                <!-- Strom & Gas -->
-                <details class="main-box" open>
-                    <summary>Strom & Gas</summary>
-                    <div class="mdl-card__supporting-text">
-                        <div class="button-group">
-                            <button class="mail-button" id="anmeldung">Anmeldung</button>
-                            <button class="mail-button" id="abmeldung">Abmeldung</button>
-                            <button class="mail-button" id="kdnr_benötigt">Kundennummer benötigt</button>
-                            <button class="mail-button" id="rp">Ratenplan</button>
-                            <button class="mail-button" id="rechnungskorrektur_zählerstände">Rechnungskorrektur &
-                                Zählerstände</button>
-                            <button class="mail-button" id="sonnenstrom">Sonnenstrom</button>
-                            <button class="mail-button" id="verlassenschaft">Verlassenschaft</button>
-                            <button class="mail-button" id="tw">Tarifwechsel</button>
-                            <button class="mail-button" id="trockenlegungsbrief">Trockenlegungbrief</button>
-                            <button class="mail-button" id="ummeldung_erfolgreich">Ummeldung erfolgreich</button>
-                            <button class="mail-button" id="anm_pv">ANM PV</button>
-                        </div>
-                    </div>
-                </details>
+            <div class="mail-main--left">
+            <!-- Strom & Gas -->
+            <details class="box-mail" open>
+                <summary>Strom & Gas</summary>
+                <div class="button-group-mail">
+                    <button class="button-single" id="anmeldung">Anmeldung</button>
+                    <button class="button-single" id="abmeldung">Abmeldung</button>
+                    <button class="button-single" id="kdnr_benötigt">Kundennummer benötigt</button>
+                    <button class="button-single" id="rp">Ratenplan</button>
+                    <button class="button-single" id="rechnungskorrektur_zählerstände">Rechnungskorrektur &
+                        Zählerstände</button>
+                    <button class="button-single" id="sonnenstrom">Sonnenstrom</button>
+                    <button class="button-single" id="verlassenschaft">Verlassenschaft</button>
+                    <button class="button-single" id="tw">Tarifwechsel</button>
+                    <button class="button-single" id="trockenlegungsbrief">Trockenlegungbrief</button>
+                    <button class="button-single" id="ummeldung_erfolgreich">Ummeldung erfolgreich</button>
+                    <button class="button-single" id="anm_pv">ANM PV</button>
+                </div>
+            </details>
 
-                <!-- Guthaben -->
-                <details class="main-box" open>
-                    <summary>Guthaben</summary>
-                    <div class="mdl-card__supporting-text">
-                        <div class="button-group">
-                            <button class="mail-button" id="gh_auszahlung_ausweis_fehlt">ID fehlt</button>
-                            <button class="mail-button" id="gh_auszahlung">GH Auszahlung</button>
-                            <button class="mail-button" id="gh_allgemein">Allgemeines Wording</button>
-                        </div>
-                    </div>
-                </details>
+            <!-- Guthaben -->
+            <details class="box-mail" open>
+                <summary>Guthaben</summary>
+                <div class="button-group-mail">
+                    <button class="button-single" id="gh_auszahlung_ausweis_fehlt">ID fehlt</button>
+                    <button class="button-single" id="gh_auszahlung">GH Auszahlung</button>
+                    <button class="button-single" id="gh_allgemein">Allgemeines Wording</button>
+                </div>
+            </details>
 
-                <!-- Grundaufbau -->
-                <details class="main-box" open>
-                    <summary>Grundgerüst</summary>
-                    <div class="mdl-card__supporting-text">
-                        <div class="button-group">
-                            <button class="mail-button" id="grundgeruest">Grundgerüst</button>
-                            <button class="mail-button" id="tois_vorlage">Tois-Vorlage</button>
-                        </div>
-                    </div>
-                </details>
+            <!-- Grundaufbau -->
+            <details class="box-mail" open>
+                <summary>Grundgerüst</summary>
+                <div class="button-group-mail">
+                    <button class="button-single" id="grundgeruest">Grundgerüst</button>
+                    <button class="button-single" id="tois_vorlage">Tois-Vorlage</button>
+                </div>
+            </details>
 
-                <!-- Wärme -->
-                <details class="main-box" open>
-                    <summary>Wärme</summary>
-                    <div class="mdl-card__supporting-text">
-                        <div class="button-group">
-                            <button class="mail-button" id="waerme_anm">Anmeldung</button>
-                            <button class="mail-button" id="waerme_an_abm">An-/Abmeldung</button>
-                            <button class="mail-button" id="waerme_mieterwechsel">Mieterwechsel</button>
-                            <button class="mail-button" id="heizkostenabrechnung">Heizkostenabrechnung</button>
-                            <button class="mail-button" id="mw_untermieter">Mieterwechsel Untermieter</button>
-                        </div>
-                    </div>
-                </details>
+            <!-- Wärme -->
+            <details class="box-mail" open>
+                <summary>Wärme</summary>
+                <div class="button-group-mail">
+                    <button class="button-single" id="waerme_anm">Anmeldung</button>
+                    <button class="button-single" id="waerme_an_abm">An-/Abmeldung</button>
+                    <button class="button-single" id="waerme_mieterwechsel">Mieterwechsel</button>
+                    <button class="button-single" id="heizkostenabrechnung">Heizkostenabrechnung</button>
+                    <button class="button-single" id="mw_untermieter">Mieterwechsel Untermieter</button>
+                </div>
+            </details>
 
-                <!-- WienerNetze -->
-                <details class="main-box">
-                    <summary>Wiener Netze</summary>
-                    <div class="mdl-card__supporting-text">
-                        <div class="button-group">
-                            <button class="mail-button" id="nix">noch nix</button>
-                        </div>
-                    </div>
-                </details>
+            <!-- WienerNetze -->
+            <details class="box-mail">
+                <summary>Wiener Netze</summary>
+                <div class="button-group-mail">
+                    <button class="button-single" id="nix">noch nix</button>
+                </div>
+            </details>
 
-                <!-- Kontaktdaten -->
-                <details class="main-box">
-                    <summary>Kontaktdaten</summary>
-                    <div class="mdl-card__supporting-text">
-                        <div class="button-group">
-                            <button class="mail-button" id="data_spit">Spittelau</button>
-                            <button class="mail-button" id="data_wn">WienerNetze</button>
-                            <button class="mail-button" id="data_KS_allgemein">contact_data</button>
-                            <button class="mail-button" id="data_inkasso">Inkassobüro</button>
-                        </div>
-                    </div>
-                </details>
-
+            <!-- Kontaktdaten -->
+            <details class="box-mail">
+                <summary>Kontaktdaten</summary>
+                <div class="button-group-mail">
+                    <button class="button-single" id="data_spit">Spittelau</button>
+                    <button class="button-single" id="data_wn">WienerNetze</button>
+                    <button class="button-single" id="data_KS_allgemein">contact_data</button>
+                    <button class="button-single" id="data_inkasso">Inkassobüro</button>
+                </div>
+            </details>
             </div>
 
-            <div class="main-textarea">
-                <textarea id="outputArea" placeholder="Mailvorlage"></textarea>             
+            <div class="mail-main--right">
+                <textarea id="outputArea" placeholder="Durch drücken auf einen Button, wird der Text automatisch kopiert..."></textarea>
             </div>
         </section>
 
-<!-- ##################################################################################################################### -->
+        <!-- ##################################################################################################################### -->
         <div class="floating-button">
-            <a href="index.html">⬅️ zurück zu 🦄</a> 
+            <a href="work-tools.html">⬅️ zurück zu Tools</a>
             <select id="theme-selector" onchange="changeTheme()">
                 <option value="design/style-dark.css">dark</option>
                 <option value="design/style-light.css">light</option>
@@ -115,7 +102,7 @@
 
             </select>
         </div>
-<!-- ##################################################################################################################### -->
+        <!-- ##################################################################################################################### -->
 
 
         <script src="script.js"></script>

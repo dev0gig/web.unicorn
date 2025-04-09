@@ -4,13 +4,6 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* floating DIV */
-.hidden {
-    display: none;
-}
-
-/* HEADER */
-
 .header-box {
     display: flex;
     justify-content: space-between;
@@ -21,15 +14,18 @@ body {
 }
 
 .header-left {
-    padding-left: 130px;
-    font-size: 16pt;
+    padding-left: 5%;
+    font-size: 26pt;
+    font-weight: bold;
     color: white;
+    overflow: hidden;
 }
 
 .header-right {
-    padding-right: 130px;
+    padding-right: 5%;
     font-size: 16pt;
     color: white;
+    overflow: hidden;
 }
 
 .header-link {
@@ -55,43 +51,41 @@ body {
     border-radius: 0px 0px 7px 7px;
 }
 
-.header-label-text {
-    color: white;
-    padding: 0px 10px;
-}
-
-.header-box-label {
-    color: white;
-}
-
 a {
     color: white;
 }
 
 /* MAIN */
-h1 {
+.unicorn-main--title {
     margin-left: 130px;
     font-size: 35pt;
+    font-weight: bold;
     color: #000460;
 }
 
-.main-container {
-    margin: 30px 100px;
+.tools-main {
+    margin: 30px 80px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 50px;
 }
 
-.main-container-box {
+.box-tools {
     flex: 1;
     min-width: 300px;
-    padding: 25px;
+    padding: 0px 25px 25px 25px;
     box-shadow: 0px 10px 50px #CCCCCC;
     border-radius: 15px;
 }
 
-.system-button {
+.box-title{
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-single {
     height: 50px;
 
     border: 2px solid #EB6626;
@@ -111,17 +105,19 @@ h1 {
     }
 }
 
-.button-group {
+.button-group-tools {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
 /* FOOTER */
-.footer-box {
-    height: 80px;
-
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    height: 20px;
     background-color: #DEDFE3;
-
-    line-height: 80px;
 }

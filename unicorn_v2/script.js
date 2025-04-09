@@ -1,9 +1,7 @@
-// Funktion zum Setzen der Mailvorlage
 function setMailVorlage(content) {
 	document.getElementById('outputArea').value = content;
 }
 
-// Objekt zur Speicherung der Mailvorlagen
 const mailVorlagen = {
 	grundgeruest: `Guten Tag,
 
@@ -185,7 +183,7 @@ Fr: 8:00-15:00 Uhr (mit Termin bis 16:00 Uhr)
 
 Terminvereinbarung: https://www.servicetreff.at/
 
-##################################################################
+---
 
 Servicepoint Erdberg:
 
@@ -197,7 +195,7 @@ Fr: 8:00-15:00 Uhr (mit Termin bis 16:00 Uhr)
 
 Terminvereinbarung: https://www.servicetreff.at/
 
-##################################################################
+---
 
 Servicepoint Guntramsdorf:
 
@@ -340,27 +338,17 @@ Bezüglich der Zwischenablesung ersuchen wir Sie, mit der Firma TXXXX unter der 
  
 Freundliche Grüße und danke für Ihr Vertrauen.`,
 
-
-
-
-
-
-
-
-
-
 	nix: `ist nix, wieso klickst du mich dann an....`,
 };
 
-// Schleife zum Hinzufügen der Event-Listener
 Object.keys(mailVorlagen).forEach(id => {
 	document.getElementById(id).addEventListener('click', function () {
 		setMailVorlage(mailVorlagen[id]);
 	});
 });
 
-const textArea = document.getElementById('outputArea');
-
-textArea.addEventListener('click', function() {
-  this.select();
-});
+document.getElementById("outputArea").addEventListener("click", function() {
+	this.select(); // Selektiert den gesamten Text im Textfeld
+	document.execCommand("copy"); // Kopiert die Selektion in die Zwischenablage
+  });
+  

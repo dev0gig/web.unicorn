@@ -1,12 +1,3 @@
-/* Allgemeine Einstellungen */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dunkler Hintergrund */
-    color: #f0f0f0; /* Helle Schriftfarbe */
-    margin: 0;
-    padding: 0;
-}
-
 /* Header */
 header {
     background-color: #1e1e1e; /* Dunkler Header */
@@ -58,74 +49,179 @@ header {
 }
 
 /* Main */
-main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.unicorn-main--title {
+    margin-left: 130px;
+    font-size: 35pt;
+    font-weight: bold;
+    color: #000460;
 }
 
-.main-title h1 {
+.tools-main {
+    margin: 30px 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.unicorn-main--title {
     color: #ffa500;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.main-container {
+.tools-main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    max-width: 1200px;
 }
 
-.main-container-box {
-    background-color: #1e1e1e; /* Box-Hintergrund */
+.box-tools {
+    border: 2px solid #444;
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    min-width: 300px;
+    padding: 0px 25px 25px 25px;
     border-radius: 8px;
+}
+
+.box-title{
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+}
+
+
+
+
+body {
+    margin: 0;
+    background-color: #222;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mail-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.main-container-box p {
-    font-size: 1.2rem;
-    color: #ffa500;
-    margin-bottom: 15px;
-}
-
-/* Buttons */
-.button-group {
+.mail-main--left {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.system-button {
-    background-color: #ffa500;
-    color: #121212;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+.mail-main--right {
+    display: flex;
+    justify-content: center;
 }
 
-.system-button:hover {
-    background-color: #ff8c00;
-    transform: scale(1.05);
+.box-mail {
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid #444;
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer */
-footer {
-    background-color: #1e1e1e;
-    color: #888;
+.button-group-tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.button-group-mail {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.button-single {
+    min-height: 50px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #4A4A4A;
+    font-size: 16px;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        background-color: #FFAA66;
+        border-color: #FFAA66;
+        color: #FFFFFF;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
 }
 
-.footer-text {
-    font-size: 0.9rem;
+textarea {
+    position: sticky;
+    top: 10px;
+    margin: 0;
+    padding: 20px;
+    height: 80vh;
+    width: 90%;
+    border-radius: 10px;
+    border: 2px solid #444;
+    background-color: #333;
+    color: #FFFFFF;
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    resize: none;
+}
+
+summary {
+    cursor: pointer;
+    padding: 15px;
+    background-color: #4A4A4A;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #555;
+    text-align: left;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+    margin-bottom: 10px;
+
+    &:hover {
+        background-color: #FFAA66;
+        color: #FFFFFF;
+        transform: translateY(-2px);
+    }
+}
+
+details[open] summary {
+    background-color: #FF8844;
+    color: #FFFFFF;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: #FF8844;
+    }
 }
