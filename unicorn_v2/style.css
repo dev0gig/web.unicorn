@@ -59,7 +59,7 @@ body {
 .main-textarea {
     display: flex;
     justify-content: center; /* Horizontal zentrieren */
-    height: 100%; /* Nimmt die volle Höhe der Zelle ein */
+    height: 50vw; /* Nimmt die volle Höhe der Zelle ein */
 }
 
 textarea {
@@ -104,4 +104,13 @@ summary:hover {
 details[open] summary {
     background-color: #FF8844; /* Etwas dunkleres Orange, wenn geöffnet */
     color: #FFFFFF; /* Weißer Text bleibt */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+        color: #FF8844;
+    }
 }
