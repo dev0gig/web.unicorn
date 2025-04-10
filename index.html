@@ -21,13 +21,6 @@
             color: #f0f0f0;
             height: 100vh;
             padding: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .navbar h2 {
-            color: #ffa500;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
         }
 
         .navbar a {
@@ -41,8 +34,8 @@
         }
 
         .navbar a:hover {
-            background-color: #ffa500;
-            color: #1c1c1c;
+            background-color: #222;
+            cursor: pointer;
         }
 
         .content {
@@ -59,33 +52,41 @@
             margin-bottom: 20px;
         }
 
-        .button-single-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+        .button-group {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
         }
 
-        a.button-single {
-            text-decoration: none;
-            color: #1c1c1c;
-            background-color: #ffa500;
-            padding: 15px 30px;
+        .button-single {
+            min-height: 50px;
+            border: 2px solid #555;
             border-radius: 8px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: #FFFFFF;
+            background-color: #4A4A4A;
+            font-size: 16px;
+            text-align: center;
+            padding: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+            &:hover {
+                background-color: #FFAA66;
+                border-color: #FFAA66;
+                color: #FFFFFF;
+                transform: translateY(-3px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                cursor: pointer;
+            }
         }
 
-        a.button-single:hover {
-            background-color: #ff8c00;
-            transform: scale(1.1);
-        }
-
-        footer {
-            margin-top: 20px;
-            font-size: 0.9rem;
+        .footer {
+            background-color: #333;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
             color: #888;
         }
     </style>
@@ -98,22 +99,34 @@
 
 <body>
     <div class="navbar">
-        <h2>Wiener Stadtwerke</h2>
-        <a href="https://www.wienerstadtwerke.at" target="_blank">Hauptseite</a>
-        <a href="https://www.wienenergie.at" target="_blank">Wien Energie</a>
-        <a href="https://www.wienerlinien.at" target="_blank">Wiener Linien</a>
-        <a href="https://www.bestattungwien.at" target="_blank">Bestattung Wien</a>
-        <a href="https://www.friedhoefewien.at" target="_blank">Friedhöfe Wien</a>
+        <a href="https://www.wienerstadtwerke.at/" target="_blank"> <img
+                src="https://www.wienerstadtwerke.at/image/layout_set_logo?img_id=22615230&t=1744196967447" /></a>
+        <a href="https://www.wienerlinien.at/" target="_blank"> <img
+                src="https://www.wienerlinien.at/image/layout_set_logo?img_id=18381139&t=1713959345651" /></a>
+        <a href="https://www.wienenergie.at/" target="_blank"> <img
+                src="https://www.wienenergie.at/wp-content/themes/we-theme/public/wp-content/themes/we-theme/public/logo-we-theme-regular.svg" /></a>
+        <a href="https://www.wienernetze.at/" target="_blank"> <img
+                src="https://www.wienernetze.at/image/layout_set_logo?img_id=18485159&t=1713959374622" /></a>
+        <a href="https://www.wlb.at/" target="_blank"> <img
+                src="https://www.wlb.at/image/layout_set_logo?img_id=18160554&t=1713959345658" /></a>
+        <a href="https://www.wipark.at/" target="_blank"> <img
+                src="https://www.wipark.at/image/layout_set_logo?img_id=6753665&t=1713959345375" /></a>
+        <a href="https://www.wienit.at/" target="_blank"> <img
+                src="https://www.wienit.at/image/layout_set_logo?img_id=18163000&t=1713959411884" /></a>
+        <a href="https://www.bestattungwien.at/" target="_blank"> <img
+                src="https://www.bestattungwien.at/image/layout_set_logo?img_id=18239249&t=1713959355571" /></a>
+        <a href="https://www.friedhoefewien.at/" target="_blank"> <img
+                src="https://www.friedhoefewien.at/image/layout_set_logo?img_id=18169382&t=1713959380757" /></a>
+        <a href="https://www.immoh.at/" target="_blank"> <img
+                src="https://www.immoh.at/image/layout_set_logo?img_id=18094283&t=1713959405431" height="40px" /></a>
     </div>
     <div class="content">
         <h1>Willkommen bei Unicorn</h1>
         <div class="button-group">
             <button class="button-single" onclick="window.open('unicorn_v2/mail-template.html')">Mailvorlagen
-                V2<</button>
+                V2</button>
             <button class="button-single" onclick="window.open('unicorn_v2/work-tools.html')">Unicorn V2</button>
             <button class="button-single" onclick="window.open('unicron_v1/index.html')">Unicorn V1</button>
-        </div>
-        <div class="button-group">
             </button>
             <button class="button-single" onclick="window.open('https://intranet.wienenergie.at')">
                 Intranet
