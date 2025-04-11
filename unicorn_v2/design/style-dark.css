@@ -1,7 +1,16 @@
-/* Header */
+body {
+    margin: 0;
+    padding-bottom: 20px;
+    background-color: #222;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 header {
-    background-color: #1e1e1e; /* Dunkler Header */
-    color: #ffa500; /* Orangefarbener Text */
+    background-color: #1e1e1e;
+    /* Dunkler Header */
+    color: #ffa500;
+    /* Orangefarbener Text */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -27,33 +36,29 @@ header {
 }
 
 .header-link {
-    color: #ffa500; /* Orangefarbene Links */
+    color: #ffa500;
+    /* Orangefarbene Links */
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .header-link:hover {
-    color: #ff8c00; /* Helleres Orange beim Hover */
+    color: #ff8c00;
+    /* Helleres Orange beim Hover */
 }
 
 .header-box-label a {
     color: #f0f0f0;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 16pt;
     margin-top: 10px;
+    border: solid;
+    padding: 5px 10px;
 }
 
 .header-box-label a:hover {
     color: #ffa500;
-}
-
-/* Main */
-.unicorn-main--title {
-    margin-left: 130px;
-    font-size: 35pt;
-    font-weight: bold;
-    color: #000460;
 }
 
 .tools-main {
@@ -65,9 +70,11 @@ header {
 }
 
 .unicorn-main--title {
+    margin-left: 130px;
     color: #ffa500;
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .tools-main {
@@ -87,29 +94,16 @@ header {
     border-radius: 8px;
 }
 
-.box-title{
+.box-title {
     font-size: 12pt;
     font-weight: bold;
     text-align: center;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    background-color: #111;
-}
-
-
-
-
-body {
-    margin: 0;
-    background-color: #222;
-    color: #FFFFFF;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.button-group-tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 .mail-main {
@@ -139,11 +133,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.button-group-tools {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
+
 
 .button-group-mail {
     display: grid;

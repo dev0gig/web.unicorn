@@ -35,7 +35,7 @@
         </div>
     </header>
     <section>
-            <p class="unicorn-main--title">Wichtige & Tägliche Arbeitsressourcen 🛠</h1>
+        <p class="unicorn-main--title">Wichtige & Tägliche Arbeitsressourcen 🛠</p>
         <div class="tools-main">
             <div class="box-tools">
                 <p class="box-title">Zeitpläne</p>
@@ -184,19 +184,47 @@
         </div>
     </footer>
 
-</body>
+    <!-- ##################################################################################################################### -->
+    <style>
+        .floating-button {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            z-index: 10000;
 
-<!-- ##################################################################################################################### -->
-<div class="floating-button">
-    <a href="../index.html">⬅️ zurück zum Dashboard</a>
-    <select id="theme-selector" onchange="changeTheme()">
-        <option value="design/style-dark.css">Dark Theme</option>
-        <option value="design/style-light.css">Light Theme</option>
-        <option value="design/windows98.css">Windows98</option>
-        <option value="design/v1-design.css">v1.0-Design</option>
-    </select>
-</div>
-<!-- /##################################################################################################################### -->
+            a {
+                color: gray;
+                text-decoration: none;
+            }
+        }
+    </style>
+    <div class="floating-button">
+        <select id="theme-selector" onchange="changeTheme()">
+            <option value="design/style-dark.css">Dark Theme</option>
+            <option value="design/style-light.css">Light Theme</option>
+        </select>
+    </div>
+    <!-- /##################################################################################################################### -->
+    <!-- /##################################################################################################################### -->
+    <style>
+        .footer {
+            background-color: #111;
+            border-top: solid black 1px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #888;
+        }
+    </style>
+    <footer class="footer">
+        <a href="../index.html">unicorn-dashboard</a> /
+        <a href="work-tools.html">we-tools</a> /
+
+    </footer>
+    <!-- /##################################################################################################################### -->
+
+</body>
 
 <script src="changeTheme.js"></script>
 

@@ -79,7 +79,7 @@ a {
     border-radius: 15px;
 }
 
-.box-title{
+.box-title {
     font-size: 12pt;
     font-weight: bold;
     text-align: center;
@@ -111,13 +111,70 @@ a {
     gap: 10px;
 }
 
-/* FOOTER */
-.footer {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    height: 20px;
-    background-color: #DEDFE3;
+.mail-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.mail-main--left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mail-main--right {
+    display: flex;
+    justify-content: center;
+}
+
+.box-mail {
+    flex: 1;
+    min-width: 300px;
+    padding: 0px 25px 25px 25px;
+    box-shadow: 0px 10px 50px #CCCCCC;
+    border-radius: 15px;
+}
+
+.button-group-mail {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+textarea {
+    position: sticky;
+    top: 10px;
+    padding: 20px;
+    height: 80vh;
+    width: 90%;
+    border-radius: 15px;
+    border: none;
+    color: #111;
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    line-height: 1.6;
+    box-shadow: 0px 10px 50px #CCCCCC;
+    resize: none;
+}
+
+summary {
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #111;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid orange;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: #FF8844;
+    }
 }
