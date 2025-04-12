@@ -8,9 +8,7 @@ body {
 
 header {
     background-color: #1e1e1e;
-    /* Dunkler Header */
     color: #ffa500;
-    /* Orangefarbener Text */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -37,7 +35,6 @@ header {
 
 .header-link {
     color: #ffa500;
-    /* Orangefarbene Links */
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
@@ -45,7 +42,6 @@ header {
 
 .header-link:hover {
     color: #ff8c00;
-    /* Helleres Orange beim Hover */
 }
 
 .header-box-label a {
@@ -132,8 +128,6 @@ header {
     background-color: #333;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-
-
 
 .button-group-mail {
     display: grid;
