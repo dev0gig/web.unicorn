@@ -48,7 +48,9 @@ Der Vertrag endet gemäß der 14-tägigen Kündigungsfrist am [Datum].
 
 Für die Erstellung Ihrer Schlussrechnung benötigen wir Ihre Kontaktadresse. Bitte teilen Sie uns mit, ob Sie die Schlussrechnung per Post oder per E-Mail erhalten möchten.
 
-Sollten Sie noch Fragen haben, stehen wir Ihnen selbstverständlich gerne zur Verfügung.`,
+Sollten Sie noch Fragen haben, stehen wir Ihnen selbstverständlich gerne zur Verfügung.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 
 	gh_auszahlung_ausweis_fehlt: `Guten Tag,
 
@@ -58,7 +60,9 @@ Für die Auszahlung von Guthaben ist eine Authentifizierung mittels Ausweiskopie
 
 Dies dient ausschließlich der Betrugsprävention und der Sicherheit Ihrer Auszahlung. Ihre Ausweiskopie wird nicht in Ihrem Kundendatensatz gespeichert und ausschließlich Ihrer Identifikation.
 
-Wenn Sie keine Ausweiskopie per Mail senden möchten, können Sie Ihren Ausweis auch in einem unserer Servicecenter vorweisen.`,
+Wenn Sie keine Ausweiskopie per Mail senden möchten, können Sie Ihren Ausweis auch in einem unserer Servicecenter vorweisen.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 
 	gh_auszahlung: `Guten Tag,
 
@@ -68,7 +72,9 @@ Die Authentifizierung mittels Ihrer Ausweiskopie wurde erfolgreich durchgeführt
 
 Die von Ihnen beigefügte Ausweiskopie wird nicht in Ihrem Kundendatensatz gespeichert, sondern diente ausschließlich Ihrer Identifikation.
 
-Ihre Gutschrift erhalten Sie innerhalb der nächsten Werktage auf Ihr angegebenes Bankkonto überwiesen.`,
+Ihre Gutschrift erhalten Sie innerhalb der nächsten Werktage auf Ihr angegebenes Bankkonto überwiesen.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 
 	gh_allgemein: `Guten Tag,
 
@@ -78,7 +84,9 @@ Um Ihre Bankverbindung zu hinterlegen und Ihr Guthaben auszuzahlen, benötigen w
 
 Die von Ihnen beigefügte Ausweiskopie wird nicht in Ihrem Kundendatensatz gespeichert, sondern dient ausschließlich Ihrer Identifikation.
 
-Wenn Sie keine Ausweiskopie per E-Mail senden möchten, können Sie Ihren Ausweis auch in einem unserer Servicecenter vorweisen.`,
+Wenn Sie keine Ausweiskopie per E-Mail senden möchten, können Sie Ihren Ausweis auch in einem unserer Servicecenter vorweisen.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 
 	kdnr_benötigt: `Guten Tag,
 
@@ -117,7 +125,7 @@ Donnerstag: 08:00 - 17:30
 Weitere Informationen finden Sie auf der Website des Service Treffs: www.servicetreff.at
 Bitte beachten Sie, dass Sie auch die Möglichkeit haben, einen Rückruf für allgemeine Anfragen sowie Fragen zu Smart Metern zu buchen. Für Beschwerden und Baustellenauskunft stehen separate Telefonnummern zur Verfügung. Detaillierte Informationen und Online-Services finden Sie auf der Website der Wiener Netze: www.wienernetze.at
 
-Für weitere Fragen stehen wir Ihnen gerne zur Verfügung.`,
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 
 	sonnenstrom: `Guten Tag,
 
@@ -147,7 +155,9 @@ In Ihrem Fall gibt es mehrere Verfahrensweisen:
 
 3.) Abmeldung: Wir kündigen den Vertrag (maximal 3 Monate in der Zukunft).
 
-Bitte um kurze Info für welche dieser 3 Möglichkeiten Sie sich entscheiden.`,
+Bitte um kurze Info für welche dieser 3 Möglichkeiten Sie sich entscheiden.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 
 	trockenlegungsbrief: `Guten Tag,
 
@@ -256,7 +266,7 @@ vielen Dank für Ihre Nachricht.
 Um Ihr Anliegen bearbeiten zu können, benötigen wir von Ihnen die folgenden Unterlagen:
 
 Für Mietwohnungen:
-Eine Bestätigung über den Beginn des Mietvertrages (unterschrieben), aus der das Datum des Mietvertragsendes, die Verbrauchsstellenadresse sowie die vollständigen Namen des Vermieters und Mieters hervorgehen.
+Eine Bestätigung über den Beginn des Mietvertrages (unterschrieben), die Verbrauchsstellenadresse sowie die vollständigen Namen des Vermieters und Mieters hervorgehen.
 
 Für Eigentumswohnungen:
 Eine Kopie des Kaufvertrages (unterschrieben), aus dem das Übergabedatum, die Verbrauchsstellenadresse sowie die vollständigen Namen des Verkäufers und Käufers ersichtlich sind.
@@ -288,7 +298,7 @@ Wir bitten Sie daher noch um etwas Geduld.
  
 Die Schlussabrechnung wird bis spätestens 6 Monate nach Beendigung des Verrechnungsjahres erstellt und versendet. Bitte um Übermittelung Ihrer neuen Anschrift.
  
-Sollten Sie in der Zwischenzeit Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren.`,
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 
 	waerme_mieterwechsel: `Guten Tag,
  
@@ -302,7 +312,9 @@ Um Ihnen die Abwicklung so einfach wie möglich zu machen, bieten wir Ihnen ein 
 Sie möchten dieses Service nicht nutzen? Dann informieren Sie uns bitte unter waerme@wienenergie.at
  
 Sie haben noch Fragen? Wir sind für Sie da – unter 0800 500 700 von Montag bis Freitag von
-07:30 bis 16:00 Uhr oder unter waerme@wienenergie.at`,
+07:30 bis 16:00 Uhr oder unter waerme@wienenergie.at
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 
 	anm_pv: `Guten Tag,
 
@@ -336,9 +348,61 @@ Wir nehmen zur Kenntnis, dass Sie oben genanntes Nutzungsobjekt ab XXX an HXXXXX
 Ausdrücklich weisen wir jedoch darauf hin, dass Sie als Wohnungseigentümer uns gegenüber Wärmeabnehmer und Vertragspartner für oben genanntes Nutzungsobjekt bleiben. Es erfolgt somit kein Vertragsversand an Ihren Mieter.
 Bezüglich der Zwischenablesung ersuchen wir Sie, mit der Firma TXXXX unter der Rufnummer XXXX eine Terminvereinbarung zu treffen oder die Fotos der Zählerstände per Mail an xxxxxx zu senden. 
  
-Freundliche Grüße und danke für Ihr Vertrauen.`,
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 
-	nix: `ist nix, wieso klickst du mich dann an....`,
+	Einzelner_Zäst_gespeichert: `Guten Tag,
+ 
+vielen Dank für Ihre Nachricht!
+
+Hiermit können wir Ihnen bestätigen, dass der von Ihnen bekanntgegebene Zählerstand für die angegebene Adresse in unserem System gespeichert wurde.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
+	Mehrere_Zäst_gespeichert: : `Guten Tag,
+ 
+vielen Dank für Ihre Nachricht!
+
+Hiermit können wir Ihnen bestätigen, dass die von Ihnen bekanntgegeben Zählerstände für die angegebene Adresse in unserem System gespeichert wurden.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
+	SmartMeter_Keine_ZÄST_benötigt: `Guten Tag,
+vielen Dank für Ihre Nachricht!
+ 
+Da es sich bei diesen Strom-Zähler um einen Smart-Meter handelt und dieser fernausgelesen werden kann, ist die Übermittlung der Strom-Zählerstände für die Adresse nicht notwendig.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
+	Kunde_SMARTMeter_Zäst_schickt_bei_Ummeldung: `Guten Tag,
+ 
+vielen Dank für Ihre Nachricht!
+ 
+Da es sich bei diesen Strom-Zähler um einen Smart-Meter handelt und dieser fernausgelesen werden kann, ist die Übermittlung der Strom-Zählerstände für die Adresse nicht notwendig. 
+ 
+Der Strom-Zählerstand wird zu dem Stichtag der Ummeldung automatisch aus der Ferne abgelesen und gespeichert.
+ 
+Für die Ummeldung wenden Sie sich bitte an den zuständigen Energielieferanten.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
+	KD_ZÄST_von_Gas_und_SMART_Meter_schickt: `Guten Tag,
+ 
+vielen Dank für Ihre Nachricht!
+ 
+Da es sich bei Ihrem Strom-Zähler um einen Smart-Meter handelt und dieser fernausgelesen werden kann, ist die Übermittlung der Strom-Zählerstände für die Adresse nicht notwendig.
+ 
+Der Gas-Zählerstand wurde jedoch erfolgreich gespeichert und hinterlegt.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
+	KD_ZÄST_von_Gas_und_SMARTMeter_schickt_und_es_gleichzeitig_eine_Ummeldung: `Guten Tag,
+ 
+vielen Dank für Ihre Nachricht!
+ 
+Da es sich bei Ihrem Strom-Zähler um einen Smart-Meter handelt und dieser fernausgelesen werden kann, ist die Übermittlung der Strom-Zählerstände für die Adresse nicht notwendig.
+ 
+Der Strom-Zählerstand wird zu dem Stichtag der Ummeldung automatisch aus der Ferne abgelesen und gespeichert.
+ 
+Der Gas-Zählerstand wurde jedoch erfolgreich gespeichert und hinterlegt.
+ 
+Für die Ummeldung wenden Sie sich bitte an den zuständigen Energielieferanten.
+
+Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 };
 
 Object.keys(mailVorlagen).forEach(id => {
