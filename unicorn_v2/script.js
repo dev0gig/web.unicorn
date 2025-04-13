@@ -357,7 +357,7 @@ vielen Dank für Ihre Nachricht!
 Hiermit können wir Ihnen bestätigen, dass der von Ihnen bekanntgegebene Zählerstand für die angegebene Adresse in unserem System gespeichert wurde.
 
 Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
-	Mehrere_Zäst_gespeichert: : `Guten Tag,
+	Mehrere_Zäst_gespeichert: `Guten Tag,
  
 vielen Dank für Ihre Nachricht!
 
