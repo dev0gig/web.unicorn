@@ -365,6 +365,7 @@ Hiermit können wir Ihnen bestätigen, dass die von Ihnen bekanntgegeben Zähler
 
 Für Rückfragen stehen wir selbstverständlich gerne zur Verfügung.`,
 	SmartMeter_Keine_ZÄST_benötigt: `Guten Tag,
+	
 vielen Dank für Ihre Nachricht!
  
 Da es sich bei diesen Strom-Zähler um einen Smart-Meter handelt und dieser fernausgelesen werden kann, ist die Übermittlung der Strom-Zählerstände für die Adresse nicht notwendig.
