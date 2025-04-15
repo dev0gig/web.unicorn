@@ -212,12 +212,12 @@ a {
 
 .crumb {
     display: inline-block;
-  }
-  
-  .crumb a::after {
+}
+
+.crumb a::after {
     display: inline-block;
     color: white;
     content: "|";
     font-weight: bold;
     padding: 0 3px;
-  }
+}
