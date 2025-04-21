@@ -17,6 +17,9 @@
         }
 
         .navbar {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
             width: 250px;
             background-color: #333;
             border-right: black solid 1px;
@@ -46,12 +49,20 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 20px;
         }
 
-        h1 {
-            font-size: 2.5rem;
+        .inofficialTools {
+            width: 90%;
+            height: 20%;
+            text-align: center;
+        }
+
+        .title{
+            font-size: 4rem;
             color: #ffa500;
             margin-bottom: 20px;
+            font-weight: bold;
         }
 
         .button-group {
@@ -61,7 +72,7 @@
         }
 
         .button-single {
-            min-height: 50px;
+            min-height: 100px;
             border: 2px solid #555;
             border-radius: 8px;
             color: #FFFFFF;
@@ -121,14 +132,22 @@
                 src="https://www.immoh.at/image/layout_set_logo?img_id=18094283&t=1713959405431" height="40px" /></a>
     </div>
     <div class="main">
-        <h1>Willkommen bei Unicorn</h1>
+        <span class="title">Willkommen bei Unicorn</span>
+        <div class="inofficialTools">
+            <h1>Inofficial Tools</h1>
+            <div class="button-group">
+                <button class="button-single"
+                    onclick="window.location.href = 'unicorn_v2/mail-template.html'">Mailvorlagen
+                    V2</button>
+                <button class="button-single" onclick="window.location.href = 'unicorn_v2/work-tools.html'">Unicorn
+                    V2</button>
+                <button class="button-single" onclick="window.location.href = 'unicron_v1/index.html'">Unicorn
+                    V1</button>
+                </button>
+            </div>
+        </div>
+        <h1>Official Tools</h1>
         <div class="button-group">
-            <button class="button-single" onclick="window.location.href = 'unicorn_v2/mail-template.html'">Mailvorlagen
-                V2</button>
-            <button class="button-single" onclick="window.location.href = 'unicorn_v2/work-tools.html'">Unicorn
-                V2</button>
-            <button class="button-single" onclick="window.location.href = 'unicron_v1/index.html'">Unicorn V1</button>
-            </button>
             <button class="button-single" onclick="window.location.href = 'https://intranet.wienenergie.at'">
                 Intranet
             </button>
